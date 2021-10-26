@@ -1,0 +1,26 @@
+import { Container } from "./styles";
+
+export function Hero() {
+  return (
+    <Container>
+      <div className="content">
+        <div className="wrapper">
+          <h1>
+            Com a <span>PouPay+</span><br/>
+            você <strong>organiza </strong><br/>
+            a sua <strong>vida<br/>
+            financeira!</strong>
+          </h1>
+          <p>
+            Facilitamos ao máximo o seu dia-a-dia com o dinheiro! Organize, planeje e faça acontecer em um único lugar! Com a Poupay+ você pode mais!
+          </p>
+          <div className="input-wrapper">
+            <label htmlFor="">Email</label>
+            <input type="text" placeholder="Digite aqui" />
+            <button>Começar</button>
+          </div>
+        </div>
+      </div>
+    </Container>
+  );
+}
