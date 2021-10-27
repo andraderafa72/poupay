@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import hero from '../../../../assets/img/hero.webp'
+import hero from './assets/hero.webp'
 
 export const Container = styled.section`
   width: 100%;
@@ -13,7 +13,7 @@ export const Container = styled.section`
   justify-content: flex-start;
 
   .content{
-    max-width: 1440px;
+    max-width: 1320px;
     margin: 0 auto;
     width: 100%;
     padding: 2rem;

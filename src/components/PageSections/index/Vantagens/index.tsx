@@ -1,7 +1,7 @@
 import VantagemCard from "./Card";
 import { Container } from "./styles";
-import vantagens from '../../../../assets/img/vantagens.svg';
-import blob from '../../../../assets/img/blob-vantagens.svg';
+import vantagens from './assets/vantagens.svg';
+import blob from './assets/blob-vantagens.svg';
 import { PrimaryButton } from "../../../Button";
 
 export function Vantagens () {

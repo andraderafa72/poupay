@@ -1,18 +1,20 @@
 import { Header } from "../components/Header";
-import { Hero } from "../components/Page/index/Hero";
-import { Vantagens } from "../components/Page/index/Vantagens";
+import { AppSection } from "../components/PageSections/index/AppSection";
+import { Hero } from "../components/PageSections/index/Hero";
+import { Midia } from "../components/PageSections/index/Midia";
+import { NossosUsuarios } from "../components/PageSections/index/NossosUsuarios";
+import { Vantagens } from "../components/PageSections/index/Vantagens";
 
-export function Index (){
+export function Index() {
   return (
     <>
       <Header page="home" />
-      <Hero />
-      <main style={{
-        maxWidth: '1440px',
-        margin: '0 auto',
-        padding: '2rem'
-      }}>
+      <main>
+        <Hero />
         <Vantagens />
+        <NossosUsuarios />
+        <Midia />
+        <AppSection />
       </main>
     </>
   );

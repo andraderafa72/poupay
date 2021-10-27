@@ -20,7 +20,6 @@ export const GlobalStyle = createGlobalStyle`
     --background-light: #FFF;
     --background-medium: #FAFBFB;
     --background-dark: #F4F6F6;
-
   }
   
   *{
@@ -54,11 +53,15 @@ export const GlobalStyle = createGlobalStyle`
     font-weight: 600;
   }
 
+  h2{
+      font-size: 2.25rem;
+  }
+
   button{
     cursor: pointer;
   }
 
-  nav{
+  nav, ul{
     list-style: none;
   }
   

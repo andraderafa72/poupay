@@ -46,7 +46,7 @@ export const Container = styled.header<HeaderProps>`
           padding: .5rem 1rem;
           background: var(--purple-300);
           border: none;
-          border-radius: .25rem;
+          border-radius: .75rem;
           color: var(--text-light);
           font-weight: bold;
         }

@@ -4,7 +4,8 @@ export const Container = styled.section`
   display: flex;
   justify-content: space-between;
   gap: 5rem;
-  margin:8rem 0 4rem;
+  max-width: 1320px;
+  margin:8rem auto 4rem;
   position: relative;
 
   img:not(.blob){
@@ -47,7 +48,7 @@ export const Container = styled.section`
     margin: 1.5rem 0;
 
     &::-webkit-scrollbar{
-      display: none
+      /* display: none */
     }
   }
 `;
