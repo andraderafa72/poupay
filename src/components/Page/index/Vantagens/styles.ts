@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Container = styled.section`
   display: flex;
   justify-content: space-between;
-  /* align-items: flex-end; */
   gap: 5rem;
   margin:8rem 0 4rem;
   position: relative;
@@ -12,7 +11,6 @@ export const Container = styled.section`
     max-width: 663px;
     width: 40%;
     margin-top: 1.75rem;
-    /* z-index: -1; */
     transform: scale(1.15);
 
   }

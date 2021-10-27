@@ -1,4 +1,4 @@
-import { cloneElement, HTMLProps, ReactNode } from "react";
+import { HTMLProps, ReactNode } from "react";
 import { Button } from "./style";
 
 interface ButtonProps extends HTMLProps<HTMLButtonElement> {

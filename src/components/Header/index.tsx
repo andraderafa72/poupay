@@ -10,9 +10,9 @@ export function Header({ page }: HeaderProps) {
   return (
     <Container page={page}>
       <div className="wrapper">
-        <a href="">
+        <Link to="/">
           <img src={logo} alt="" />
-        </a>
+        </Link>
 
         <nav>
           <li>
@@ -38,8 +38,8 @@ export function Header({ page }: HeaderProps) {
         </nav>
 
         <div className="auth-buttons">
-          <a href="">Login</a>
-          <a href="" className="primary">Começar grátis</a>
+          <Link to="/">Login</Link>
+          <Link to="/" className="primary">Começar grátis</Link>
         </div>
       </div>
     </Container>
