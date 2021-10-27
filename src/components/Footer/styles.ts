@@ -15,90 +15,75 @@ export const Container = styled.footer<HeaderProps>`
 
   > img{
     position: absolute;
+    z-index: 0;
+  }
+
+  *{
+    z-index: 1;
+    color: var(--text-light);
   }
 
   .wrapper{
-    max-width: 1440px;
+    max-width: 1320px;
     margin: 0 auto;
     width: 100%;
     
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-between;
 
-
-    img{
-      width: 350px;
-      height: 106px;
-      object-fit: cover; 
-    }
-
-    a{
-      color: var(--text-light);
-    }
-
-    nav{
+    .links{
+      /* font-size: 1.125rem; */
       display: flex;
-      align-items: center;
+      flex-direction: column;
+      strong{
+        font-size: 1.125rem;
+        margin-bottom: 2.5rem;
+      }
 
-      li{
-        select{
-          padding: .5rem 1rem;
-          background: var(--purple-300);
-          border: none;
-          border-radius: .75rem;
-          color: var(--text-light);
-          font-weight: bold;
-        }
+      a:hover{
+        transition: .2s;
+        color: var(--pink-200);
+      }
 
-        a{
-          padding: .75rem 1.25rem;
-          font-size: 1.125rem;
-          font-weight: medium;
-          position: relative;
-          display: inline-block;
+      a + a{
+        margin-top: 2rem;
+      }
+    }
 
-          &::after{
-            content: '';
-            position: absolute;
-            width: 10px;
-            border-radius: 0 0 1rem 1rem;
-            height: 4rem;
-            top: -8rem;
-            left: 50%;
-            background: var(--pink-400);
-            transition: .2s;
-          }
+    .social-media{
+      strong{
+        display: inline-block;
+        margin-bottom: 1rem;
+      }
+      ul{
+        display: flex;
+        gap: 1rem;
 
-          &:hover{
-            &::after{
-              top: -4rem;
-            }
-          }
+        li{
+          width: 2rem;
+          height: 2rem;
+          border-radius: 100%;
+          background: var(--pink-400);
         }
       }
     }
 
-    .auth-buttons{
-      a{
-        padding: .75rem 1rem;
-        margin-left: 1rem;
-        transition: .2s;
-        font-size: 1.125rem;
-        &:hover:not(.primary){
-          color: var(--pink-400)
-        }
+    .info{
+      strong{
+        display: inline-block;
+        margin-bottom: 1rem;
+      }
 
-        &.primary{
-          padding: .75rem 2rem;
-          border: 2px solid var(--text-light);
-          border-radius: 1rem;
+      p span{
+        font-weight: bold;
+      }
+    }
 
-          &:hover{
-            background: var(--pink-400);
-            border-color: var(--pink-400);
-          }
-        }
+    .download-app{
+      strong{
+        display: inline-block;
+        margin-bottom: 1rem;
       }
     }
   }
