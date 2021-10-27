@@ -68,9 +68,10 @@ export const Container = styled.header<HeaderProps>`
             left: 50%;
             background: var(--pink-400);
             transition: .2s;
+            transform: translateX(-50%);
           }
 
-          &:hover{
+          &:hover, &.active{
             &::after{
               top: -4rem;
             }

@@ -56,6 +56,12 @@ export const Container = styled.section`
         label{
           position: absolute;
           top: 0;
+          left: 0;
+          padding: 0 .5rem;
+          transform: translate3D(25%, -50%, 0);
+          background: #8844E3;
+          color: var(--text-light);
+          /* letter-spacing: 1px; */
         }
 
         input, button{
@@ -73,6 +79,7 @@ export const Container = styled.section`
 
           &::placeholder{
             color: var(--text-light);
+            opacity: .8;
           }
         }
         

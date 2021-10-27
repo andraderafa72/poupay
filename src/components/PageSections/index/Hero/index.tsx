@@ -15,7 +15,7 @@ export function Hero() {
             Facilitamos ao máximo o seu dia-a-dia com o dinheiro! Organize, planeje e faça acontecer em um único lugar! Com a Poupay+ você pode mais!
           </p>
           <div className="input-wrapper">
-            <label htmlFor="">Email</label>
+            <label>E-mail</label>
             <input type="text" placeholder="Digite aqui" />
             <button>Começar</button>
           </div>

@@ -1,9 +1,12 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 // import { Link } from "react-router-dom";
 import { Container } from "./styles";
-// import logo from '../../assets/img/logo.png';
 import background from './assets/rodape.svg'
 import { DownloadAppButtons } from "./DownloadAppButtons";
+import instagram from './assets/instagram.svg';
+import facebook from './assets/facebook.svg';
+import linkedin from './assets/linkedin.svg';
+import youtube from './assets/youtube.svg';
 
 export function Footer() {
   return (
@@ -26,16 +29,24 @@ export function Footer() {
           <strong>Social Media</strong>
           <ul>
             <li>
-              <a href="https://instagram.com">I</a>
+              <a href="https://instagram.com">
+                <img src={facebook} alt="" />
+              </a>
             </li>
             <li>
-              <a href="https://instagram.com">I</a>
+              <a href="https://instagram.com">
+                <img src={instagram} alt="" />
+              </a>
             </li>
             <li>
-              <a href="https://instagram.com">I</a>
+              <a href="https://instagram.com">
+                <img src={linkedin} alt="" />
+              </a>
             </li>
             <li>
-              <a href="https://instagram.com">I</a>
+              <a href="https://instagram.com">
+                <img src={youtube} alt="" />
+              </a>
             </li>
           </ul>
         </div>

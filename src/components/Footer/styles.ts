@@ -61,10 +61,27 @@ export const Container = styled.footer<HeaderProps>`
         gap: 1rem;
 
         li{
-          width: 2rem;
-          height: 2rem;
           border-radius: 100%;
           background: var(--pink-400);
+          
+          a{
+            width: 2.5rem;
+            height: 2.5rem;
+            padding: .5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: .2s;
+
+            &:hover{
+              filter: brightness(.9);
+            }
+
+            img{
+              width: 1.5rem;
+              height: 1.5rem;
+            }
+          }
         }
       }
     }
