@@ -1,9 +1,6 @@
 // import { useState } from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import { Container } from "./styles";
-import left from './assets/long_left.svg';
-import right from './assets/long_right.svg';
 
 
 import 'swiper/swiper-bundle.min.css'
