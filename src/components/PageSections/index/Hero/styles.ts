@@ -29,7 +29,7 @@ export const Container = styled.section`
       h1{ 
         font-size:3.5rem;
         font-weight: normal;
-        line-height: 140%;
+        line-height: 130%;
         color: var(--text-light);
 
         span{
@@ -48,7 +48,7 @@ export const Container = styled.section`
       }
 
       .input-wrapper{
-        margin-top: 1rem;
+        margin-top: 3.5rem;
         display: flex;
         align-items: center;
         position: relative;
@@ -74,6 +74,7 @@ export const Container = styled.section`
         input{
           background: transparent;
           border: 2px solid var(--text-light);
+          border-right: none;
           width: 70%;
           padding-left: 1rem;
 
