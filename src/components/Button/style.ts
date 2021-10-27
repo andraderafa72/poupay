@@ -10,7 +10,7 @@ export const Button = styled.button`
   border: none;
   border-radius: 1rem;
   font-size: 1rem;
-
+  transition: .2s;
   &:hover{
     filter: brightness(.9);
   }

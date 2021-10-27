@@ -1,6 +1,6 @@
 import { Container } from "./styles";
-import mobile from './assets/mobile.png';
-import desktop from './assets/desktop.png';
+import mobile from '../shared/mobile.webp';
+import desktop from './assets/desktop.webp';
 import check from './assets/check.svg';
 
 export function AppSection(){

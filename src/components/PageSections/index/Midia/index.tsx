@@ -1,4 +1,4 @@
-import { Card } from "./Card";
+import { Card } from "../shared/Card";
 import { Container } from "./styles";
 import blob from './assets/blob.svg';
 import blobB from './assets/blob-2.svg';
