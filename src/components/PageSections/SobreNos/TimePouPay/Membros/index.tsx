@@ -16,7 +16,7 @@ export function Membros() {
 
   function handleSubPosX() {
     if (posX <= 0) {
-      setPosX(700);
+      setPosX(1200);
     } else {
       setPosX(posX - 230 < 0 ? 0 : posX - 230);
     }
