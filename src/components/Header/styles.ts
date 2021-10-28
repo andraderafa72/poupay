@@ -11,6 +11,7 @@ export const Container = styled.header<HeaderProps>`
   top: 0;
   left: 0;
   right: 0;
+  z-index: 9;
   background: ${props => props.page === 'home' ? 'transparent' : 'var(--purple-400)' };
   padding: 2rem;
   display: flex;
@@ -18,7 +19,7 @@ export const Container = styled.header<HeaderProps>`
   justify-content: center;
 
   .wrapper{
-    max-width: 1440px;
+    max-width: 1320px;
     margin: 0 auto;
     width: 100%;
     

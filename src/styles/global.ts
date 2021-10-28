@@ -42,6 +42,7 @@ export const GlobalStyle = createGlobalStyle`
   body{
     background: var(--background-light);
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
   }
 
   body, input, textarea, button{

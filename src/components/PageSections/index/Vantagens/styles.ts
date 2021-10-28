@@ -37,12 +37,37 @@ export const Container = styled.section`
     }
   }
 
+  .vantagens{
+    overflow: hidden;
+
+
+    .buttons{
+      padding-right: 1rem;
+      display: flex;
+      justify-content: flex-end;
+      /* margin-left: auto; */
+    }
+    button{
+      background: none;
+      border: none;
+
+      img{
+        width: 100%; 
+      }
+      & + button{
+        margin-left: 1rem;
+        img{
+          margin-bottom:.1rem;
+        }
+      }
+    }
+  }
+
   .wrapper{
     display: flex;
     gap: 1rem;
     justify-content: flex-start;
-    width: 100%;
-    overflow-x: auto;
+    transition: .2s;
     padding: 1rem;
     padding-left: 0;
     margin: 1.5rem 0;
