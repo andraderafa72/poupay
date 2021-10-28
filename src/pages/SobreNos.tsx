@@ -8,7 +8,7 @@ import { TimePouPay } from "../components/PageSections/SobreNos/TimePouPay";
 export function SobreNos() {
   return (
     <>
-      <Header page="sobre nos"/>
+      <Header page="sobre"/>
 
       <main>
         <MainBanner />
