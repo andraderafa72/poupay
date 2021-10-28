@@ -2,7 +2,7 @@
 // import { Link } from "react-router-dom";
 import { Container } from "./styles";
 import background from './assets/rodape.svg'
-import { DownloadAppButtons } from "./DownloadAppButtons";
+import { DownloadAppButtons } from "../DownloadAppButtons";
 import instagram from './assets/instagram.svg';
 import facebook from './assets/facebook.svg';
 import linkedin from './assets/linkedin.svg';

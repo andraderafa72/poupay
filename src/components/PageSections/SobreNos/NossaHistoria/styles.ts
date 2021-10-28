@@ -11,7 +11,7 @@ export const Container = styled.section`
     display: flex;
     width: 100%;
     margin: 0 auto;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     position: relative;
     color: var(--text-light);

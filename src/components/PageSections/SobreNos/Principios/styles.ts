@@ -14,24 +14,24 @@ export const Container = styled.section`
     width: 100%;
 
     header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 4rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 4rem;
 
-    h2{
-      font-size: 2.25rem;
-      line-height: 2.75rem;
-      font-weight: 600;
-      margin-bottom: .75rem;
-    }
+      h2{
+        font-size: 2.25rem;
+        line-height: 2.75rem;
+        font-weight: 600;
+        margin-bottom: .75rem;
+      }
 
-    p{
-      max-width: 600px;
-      text-align: center;
-      color: var(--text-body);
+      p{
+        max-width: 600px;
+        text-align: center;
+        color: var(--text-body);
+      }
     }
-  }
   
 
     main{

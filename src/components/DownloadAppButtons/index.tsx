@@ -1,6 +1,6 @@
 import { ButtonsContainer } from "./styles";
-import android from '../../PageSections/index/shared/android.svg';
-import ios from '../../PageSections/index/shared/ios.svg';
+import android from './android.svg';
+import ios from './ios.svg';
 
 export function DownloadAppButtons() {
   return (
