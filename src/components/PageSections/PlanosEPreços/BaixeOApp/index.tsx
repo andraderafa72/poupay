@@ -1,5 +1,4 @@
 import { Container } from "./styles";
-import woman from './assets/woman.png';
 import { DownloadAppButtons } from "../../../DownloadAppButtons";
 
 export function BaixeOApp() {

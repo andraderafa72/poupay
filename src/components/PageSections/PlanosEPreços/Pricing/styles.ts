@@ -36,12 +36,12 @@ export const Container = styled.section`
       
       > .wrapper{
         /* padding: 0 1rem; */
-        height: 500px;
+        height: 550px;
         background: var(--blue-500);
       }
     }
 
-    .col-1, .col-3{
+    .col-1{
       width: 30%;
     }
 
@@ -51,10 +51,7 @@ export const Container = styled.section`
 
     .plano-free, .plano-anual,.plano-premium{
       p{
-        display: flex;
-        align-items: center;
         justify-content: center;
-
       }
 
       img{
@@ -65,7 +62,7 @@ export const Container = styled.section`
     }
     .todos-os-beneficios, .plano-free, .plano-anual,.plano-premium{
       background: var(--blue-500);
-      height: 500px;
+      height: 550px;
       padding: 1.5rem 1rem;
       width: 100%;
       p{
@@ -73,6 +70,8 @@ export const Container = styled.section`
         height: 3.45rem;
         border-bottom: 1px solid rgba(255, 255, 255, 0.15);
         color: var(--text-light);
+        display: flex;
+        align-items: center;
       }
     }
 
@@ -105,11 +104,18 @@ export const Container = styled.section`
       margin-right: 1rem;
     }
 
+    .plano-anual{
+      p{
+        max-width: 60%;
+        margin: 0 auto;
+      }
+    }
+
     .plano-anual .button{
       background: var(--blue-500);
       padding-bottom: 1rem;
-      width: 110%;
-      transform: translateX(-5%);
+      width: 109%;
+      transform: translateX(-4%);
       border-radius: 0 0 1rem 1rem;
 
       display: flex;

@@ -1,6 +1,6 @@
 import { PrimaryButton } from "../../../Button";
 import { Container } from "./styles";
-import check from './assets/check.svg';
+import check from '../shared/check.svg';
 import pinkCheck from './assets/pink-check.svg';
 import not from './assets/not.svg';
 

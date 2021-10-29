@@ -7,6 +7,7 @@ import instagram from './assets/instagram.svg';
 import facebook from './assets/facebook.svg';
 import linkedin from './assets/linkedin.svg';
 import youtube from './assets/youtube.svg';
+import { Link } from "react-router-dom";
 
 export function Footer() {
   return (
@@ -15,14 +16,17 @@ export function Footer() {
       <div className="wrapper">
         <div className="links">
           <strong>PouPay+</strong>
-          <a href="#">Home</a>
-          <a href="#">Sobre nós</a>
-          <a href="#">Planos</a>
+          <Link to="/">Home</Link>
+          <Link to="/sobrenos">Sobre nós</Link>
+          <Link to="/planos">Planos</Link>
         </div>
 
         <div className="links">
           <a href="#" style={{ marginTop: '3.75rem' }}>Contato</a>
-          <a href="#">Política de privacidade</a>
+
+          <Link to="/politicadeprivacidade">
+            Política de privacidade
+          </Link>
         </div>
 
         <div className="social-media">

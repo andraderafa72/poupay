@@ -4,6 +4,8 @@ import { MainBanner } from "../components/Banner";
 import { Pricing } from "../components/PageSections/PlanosEPreços/Pricing";
 import { ComeceAgora } from "../components/PageSections/PlanosEPreços/ComeceAgora";
 import { BaixeOApp } from "../components/PageSections/PlanosEPreços/BaixeOApp";
+import { CardsSection } from "../components/PageSections/PlanosEPreços/CardsSection";
+import { Comparativo } from "../components/PageSections/PlanosEPreços/Comparativo";
 
 export function Planos() {
   return (
@@ -16,7 +18,9 @@ export function Planos() {
         />
         <Pricing />
         <ComeceAgora />
+        <CardsSection />
         <BaixeOApp />
+        <Comparativo />
       </main>
 
       <Footer />
