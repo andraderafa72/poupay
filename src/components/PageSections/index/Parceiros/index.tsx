@@ -1,5 +1,7 @@
 import {Card} from "../shared/Card";
 import { Container } from "./styles";
+import left from './assets/left.svg';
+import right from './assets/right.svg';
 
 export function Parceiros() {
   return (
@@ -11,6 +13,14 @@ export function Parceiros() {
         </header>
 
         <main>
+          <div className="buttons">
+            <button>
+              <img src={left} alt="" />
+            </button>
+            <button>
+              <img src={right} alt="" />
+            </button>
+          </div>
           <div className="parceiros">
             <Card />
             <Card />

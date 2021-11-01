@@ -7,6 +7,7 @@ export const Container = styled.section`
   max-width: 1320px;
   margin:8rem auto 4rem;
   position: relative;
+  padding: 2rem;
 
   img:not(.blob){
     max-width: 663px;
@@ -27,13 +28,16 @@ export const Container = styled.section`
     display: flex;
     flex-direction: column;
     width: 60%;
+    padding-right: 2rem;
 
     h2{
       font-size: 2.25rem;
+      max-width: 550px;
     }
 
     p{
       color: var(--text-body);
+      max-width: 550px;
     }
   }
 
@@ -42,10 +46,11 @@ export const Container = styled.section`
 
 
     .buttons{
-      padding-right: 1rem;
       display: flex;
       justify-content: flex-end;
       /* margin-left: auto; */
+      padding-right: 1.5rem;
+      width: 100%;
     }
     button{
       background: none;
@@ -74,6 +79,31 @@ export const Container = styled.section`
 
     &::-webkit-scrollbar{
       /* display: none */
+    }
+  }
+
+  @media(max-width: 768px){
+    flex-direction: column;
+    padding-right: 0;
+    .content{
+      width: 100%;
+
+      h2,p{
+        padding-right: 2rem;
+      }
+    }
+
+    img:not(.blob){
+      width: 100%;
+      transform: scale(1);
+      margin-top: 0;
+
+    }
+
+    img.blob{
+      max-width: 793px;
+      width: 100%;
+      transform: translate3D(-11%, -5%, 0);
     }
   }
 `;

@@ -22,6 +22,8 @@ export const ButtonsContainer = styled.div`
       position: absolute;
       left: 0.5rem;
       top: 0rem;
+      height: 100%;
+
     }
   }
 `;

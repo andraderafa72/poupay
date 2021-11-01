@@ -4,7 +4,7 @@ interface HeaderProps {
 }
 
 export const Container = styled.footer<HeaderProps>`
-  height: 372px;
+  min-height: 372px;
   width: 100%; 
   background: transparent linear-gradient(173deg, #5610E7 0%, #6B16DB 57%, #f33e8f 100%) 0% 0% no-repeat padding-box;
   padding: 2rem;
@@ -101,6 +101,31 @@ export const Container = styled.footer<HeaderProps>`
       strong{
         display: inline-block;
         margin-bottom: 1rem;
+      }
+    }
+  }
+  @media(max-width:1023px){
+    .wrapper{
+      flex-wrap: wrap;
+      /* gap: 3rem; */
+      .links{
+        width: 50%;
+        margin-bottom: 3rem;
+      }
+
+      .social-media, .info, .download-app{
+        width: 100%;
+        margin-bottom: 3rem;
+      }
+
+      .download-app{
+        > div{
+          flex-direction: row;
+
+          button{
+            font-size: .9rem;
+          }
+        }
       }
     }
   }

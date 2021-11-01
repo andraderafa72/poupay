@@ -11,7 +11,7 @@ export const ButtonsContainer = styled.div`
     background:var(--blue-500);
     border: none;
     border-radius: .5rem;
-    width: 200px;
+    max-width: 200px;
     color: var(--text-light);
     text-align: left;
     position: relative;
@@ -20,6 +20,7 @@ export const ButtonsContainer = styled.div`
       position: absolute;
       left: 0.5rem;
       top: 0rem;
+      height: 100%;
     }
   }
 `;

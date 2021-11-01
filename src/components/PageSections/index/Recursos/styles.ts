@@ -5,7 +5,8 @@ export const Container = styled.section`
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  padding: 4rem 0 2rem;
+  padding: 4rem 1rem 2rem;
+
   header{
     display: flex;
     flex-direction: column;
@@ -35,10 +36,10 @@ export const Container = styled.section`
       max-width: 600px;
       width: 35%;
       img{
-        position: absolute;
+        /* position: absolute;
         top: -25%;
-        left: -27.5%;
-        transform: scale(.95);
+        left: -27.5%; */
+        transform: scale(.95) translate3D(-20%, -17%, 0);
         z-index: -1;
       }
     }
@@ -50,5 +51,12 @@ export const Container = styled.section`
 
   button{
     margin: 5rem auto 0;
+  }
+
+  @media(max-width: 1280px){
+    main .center img{
+      transform:translate3D(-15%, -17%, 0);
+      max-height: 800px;
+    }
   }
 `;

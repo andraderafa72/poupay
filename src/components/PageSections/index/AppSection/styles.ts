@@ -3,10 +3,11 @@ import backgroundImage from './assets/background.svg';
 
 export const Container = styled.section`
   background: url(${backgroundImage}) var(--blue-500);
-  height: 650px;
+  min-height: 650px;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 2rem;
 
   .wrapper{
     max-width: 1320px;
@@ -61,6 +62,20 @@ export const Container = styled.section`
       position: absolute;
       bottom: -20%;
       left: -20%;
+    }
+  }
+
+  @media(max-width:768px){
+    padding: 5rem 2rem;
+    .wrapper{
+      flex-wrap: wrap;
+      .left, .right{
+        width: 100%;
+      }
+      .right{
+        margin-top: 5rem;
+        transform: scale(.95) translateX(5%);
+      }
     }
   }
 `;

@@ -11,9 +11,10 @@ export const Container = styled.div`
   > div{
     width: 100%;
   }
-
+  
   .wrapper{
     display: flex;
+    padding: 0 0 3rem;
     transition: .2s;
   }
 
@@ -32,5 +33,8 @@ export const Container = styled.div`
   .comment{
     max-width: 575px;
     min-width: 100%;
+  }
+
+  @media(max-width:768px){
   }
 `; 

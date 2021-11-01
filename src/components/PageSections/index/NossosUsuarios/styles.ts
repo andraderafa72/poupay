@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const Container = styled.section`
   background: var(--background-dark);
   margin-top: 8rem;
-  .wrapper{
+  padding: 2rem;
+  > .wrapper{
     max-width: 1440px;
     margin: 0 auto;
     padding: 3rem 0;    
@@ -93,5 +94,44 @@ export const Container = styled.section`
 
   .swiper-button-next, .swiper-button-prev{
     bottom: -4rem!important;
+  }
+
+  @media(max-width: 768px){
+  
+    main{
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: flex-start; 
+      gap: 2rem;
+      margin-top: 4rem;
+      .right{
+        margin-top: 1rem;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 25%;
+        gap: 1rem;
+        > img{
+          margin: 0;
+          &:nth-child(3), &:last-child{
+            margin-left: 0;
+          }
+          & + img{
+            margin-top: 0rem;
+          }
+          &:first-child{
+            margin-left: 0;
+          }
+        }
+      }
+
+      .left{
+        width: 20%;
+      }
+      .center{
+        margin-top: 0;
+        width: calc(80% - 2rem);
+      }
+    }
   }
 `; 

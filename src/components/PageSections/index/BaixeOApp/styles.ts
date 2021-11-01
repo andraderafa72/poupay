@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Container = styled.section`
   background: var(--background-dark);
   margin-bottom: 5rem;
+  padding: 0 2rem;
   .wrapper{
     max-width: 1320px;
     margin: 0 auto;
@@ -25,7 +26,7 @@ export const Container = styled.section`
     
     .right{
       z-index: 1;
-      width: 50%;
+      width: 55%;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -35,6 +36,34 @@ export const Container = styled.section`
         text-align: center;
         margin-bottom: 2rem;
       }
+    }
+  }
+
+  @media(max-width: 767px){
+    padding: 0 1rem;
+
+    .wrapper{
+      .left{
+        display: none;
+      }
+      .right{
+        width: 100%;
+        padding: 2rem;
+        h2{
+          font-size: 2rem;
+        }
+        button{
+          width: 180px;
+        }
+      }
+    }
+  }
+
+  @media(max-width:320px){
+    .wrapper .right button{
+      width: 140px;
+      font-size: .9rem;
+
     }
   }
 `;

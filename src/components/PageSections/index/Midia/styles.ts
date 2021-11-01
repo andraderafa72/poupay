@@ -10,6 +10,7 @@ export const Container = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 2rem;
     h2{
       font-size: 2.25rem;
       line-height: 2.75rem;
@@ -29,7 +30,7 @@ export const Container = styled.section`
     display: flex;
     gap: 1rem;
     overflow-x: auto;
-    padding: 1rem 0;
+    padding: 1rem 2rem;
   }
 
   .blob, .blob-b{
@@ -44,5 +45,26 @@ export const Container = styled.section`
   .blob-b{
     right: -22.5%;
     top: -10%;
+  }
+
+  @media(max-width: 768px){
+    padding: 5rem 0;
+    header{
+      padding: 2.5rem 2rem;
+    }
+    main{
+      padding: 2rem 0;
+      padding-left: 1rem;
+      margin-bottom: 4rem;
+    }
+
+    .blob, .blob-b{
+      transform: scale(.6) translate3D(25%,15%, 0);
+    }
+
+    .blob-b{
+      top: 5%;
+      transform: scale(.6) translate3D(25%,35%, 0) rotate(10deg);
+    }
   }
 `;

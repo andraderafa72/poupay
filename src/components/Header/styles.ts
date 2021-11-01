@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 interface HeaderProps {
-  page?: string
+  page?: string;
+  isBurgerOpen: boolean
 }
 
 export const Container = styled.header<HeaderProps>`
@@ -27,11 +28,18 @@ export const Container = styled.header<HeaderProps>`
     align-items: center;
     justify-content: space-between;
 
+    .hamburger, .burger-menu{
+      display: none;
+    }
 
     img{
-      width: 350px;
+      max-width: 350px;
       height: 106px;
-      object-fit: cover; 
+      object-fit: contain; 
+      @media(max-width:1120px){
+        max-width: 250px;
+
+      }
     }
 
     a{
@@ -54,7 +62,7 @@ export const Container = styled.header<HeaderProps>`
 
         a{
           padding: .75rem 1.25rem;
-          font-size: 1.125rem;
+          font-size: 1rem;
           font-weight: medium;
           position: relative;
           display: inline-block;
@@ -86,7 +94,7 @@ export const Container = styled.header<HeaderProps>`
         padding: .75rem 1rem;
         margin-left: 1rem;
         transition: .2s;
-        font-size: 1.125rem;
+        font-size: 1rem;
         &:hover:not(.primary){
           color: var(--pink-400)
         }
@@ -104,4 +112,70 @@ export const Container = styled.header<HeaderProps>`
       }
     }
   }
-`;
+
+  @media (max-width:992px){
+    .wrapper{
+      position: relative;
+      nav, .auth-buttons{
+        display: none;
+      }
+
+      .hamburger{
+        display: block;
+        position:  ${props => props.isBurgerOpen ? 'fixed' : 'absolute'};
+        right:  ${props => props.isBurgerOpen ? '0' : '-1rem'};
+        top: 1.5rem;
+        z-index: 4;
+      }
+
+      .background{
+        display: ${props => props.isBurgerOpen ? 'block' : 'none'}; // open
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100vw;
+        height: 100vh; 
+        background: rgba(11,11,15,.5);
+        z-index: 2;
+      }
+      .burger-menu{
+        min-width: 80vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: var(--blue-500);
+        z-index: 3;
+        transition: .2s;
+        transform: ${props => props.isBurgerOpen ? 'translateX(0)' : 'translateX(100vw)'} ; // open
+
+        img{
+          margin-top: 4rem;
+        }
+
+        nav{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 1rem;
+          margin-bottom: 1rem;
+
+          a{
+            &.active{
+              color: var(--pink-400);
+              font-weight: bold;
+            }
+            &::after{
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  `;

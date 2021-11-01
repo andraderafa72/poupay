@@ -3,14 +3,16 @@ import hero from './assets/hero.webp'
 
 export const Container = styled.section`
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background: url(${hero});
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 
   display: flex;
   align-items: center;
   justify-content: flex-start;
+
 
   .content{
     max-width: 1320px;
@@ -83,7 +85,6 @@ export const Container = styled.section`
             opacity: .8;
           }
         }
-        
         button{
           border-radius: 0 .5rem .5rem 0;
           border: none;
@@ -92,6 +93,29 @@ export const Container = styled.section`
           font-weight: 700;
           font-size: 1rem;
           
+        }
+      }
+    }
+  }
+
+  @media(max-width: 768px){
+    background-position-x: 0%;
+
+    .content{
+      .wrapper{
+        h1{
+          font-size: 2.75rem;
+        }
+
+        p{
+          font-size: 1.1rem;
+          line-height: 155%;
+        }
+
+        .input-wrapper{
+          label{
+            background: #6838D0;
+          }
         }
       }
     }

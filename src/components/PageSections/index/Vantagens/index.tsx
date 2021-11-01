@@ -7,6 +7,9 @@ import { useState } from "react";
 import left from '../../../../assets/img/left.svg'
 import right from '../../../../assets/img/right.svg'
 
+import 'swiper/swiper-bundle.min.css'
+import 'swiper/swiper.min.css'
+
 export function Vantagens() {
   const [posX, setPosX] = useState(0)
 
@@ -32,8 +35,8 @@ export function Vantagens() {
       <img src={blob} className="blob" alt="" />
 
       <div className="content">
-        <h2>Lorem ipsum dolor sit amet, <br /> consectetur</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br /> eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <h2>Lorem ipsum dolor sit amet, consectetur</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
         <div className="vantagens">
           <div className="buttons">
