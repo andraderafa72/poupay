@@ -27,10 +27,37 @@ export const Container = styled.section`
   
   main{
     width: 100%;
-    display: flex;
-    gap: 1rem;
-    overflow-x: auto;
     padding: 1rem 2rem;
+
+    .buttons{
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+        justify-content: flex-end;
+        margin-bottom: 1rem;
+
+        button{
+          background: transparent;
+          border: none;
+
+          &+ button{
+            img{
+              transform: translateY(-.05rem);
+            }
+          }
+        }
+      }
+
+    .wrapper{
+      display: flex;
+      gap: 1rem;
+      overflow-x: auto;
+      &::-webkit-scrollbar{
+        display: none;
+      }
+    }
   }
 
   .blob, .blob-b{

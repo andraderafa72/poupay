@@ -1,9 +1,23 @@
 import {Card} from "../shared/Card";
 import { Container } from "./styles";
-import left from './assets/left.svg';
-import right from './assets/right.svg';
+import left from '../shared/left.svg';
+import right from '../shared/right.svg';
+import { useRef } from "react";
 
 export function Parceiros() {
+  const ref = useRef<HTMLDivElement>(null)
+
+  function handleSumPosX() {
+    if(!ref.current) return 
+    ref.current.scrollLeft = ref.current.scrollLeft + 300
+  }
+
+  function handleSubPosX() {
+    if(!ref.current) return 
+    ref.current.scrollLeft = ref.current.scrollLeft - 300
+  }
+
+
   return (
     <Container>
       <div className="wrapper">
@@ -14,14 +28,14 @@ export function Parceiros() {
 
         <main>
           <div className="buttons">
-            <button>
+            <button onClick={handleSubPosX}>
               <img src={left} alt="" />
             </button>
-            <button>
+            <button onClick={handleSumPosX}>
               <img src={right} alt="" />
             </button>
           </div>
-          <div className="parceiros">
+          <div className="parceiros" ref={ref}>
             <Card />
             <Card />
             <Card />

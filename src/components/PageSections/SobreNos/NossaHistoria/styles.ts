@@ -4,6 +4,7 @@ import styled from "styled-components";
 export const Container = styled.section`
   display: flex;
   align-items: center;
+  padding: 0 1rem;
   margin: 3rem 0;
   
   .wrapper{
@@ -18,7 +19,8 @@ export const Container = styled.section`
 
     .content{
       width: 55%;
-      padding: 0 2rem 0 1rem;
+      padding: 1rem;
+      padding-right: 3rem;
 
       h3{
         font-size: 2.25rem;
@@ -51,5 +53,48 @@ export const Container = styled.section`
       border-radius: 1rem;
     }
   }
+  @media(max-width:768px){
+    margin-bottom: 12rem;
+    .wrapper{
+      flex-direction: column-reverse;
+      gap: 2rem;
+      .image{
+        width: 80%;
+      }
+      
+      .content{
+      }
 
+      .background{
+        width: 70%;
+        height: 110%;
+        top: 0%;
+        left: 50%;
+        transform: translate3D(-50%, -5%, 0);
+      }
+    }
+  }
+  @media(max-width:425px){
+    margin-bottom: 12rem;
+    padding: 0;
+    .wrapper{
+      flex-direction: column-reverse;
+      gap: 2rem;
+      .image{
+        width: 95%;
+      }
+      
+      .content{
+        width: 80%;
+      }
+
+      .background{
+        width: 85%;
+        height: 105%;
+        top: 0%;
+        left: 50%;
+        transform: translate3D(-50%, -2.5%, 0);
+      }
+    }
+  }
 `;

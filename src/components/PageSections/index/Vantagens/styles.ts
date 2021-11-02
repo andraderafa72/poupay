@@ -76,9 +76,9 @@ export const Container = styled.section`
     padding: 1rem;
     padding-left: 0;
     margin: 1.5rem 0;
-
+    overflow: auto;
     &::-webkit-scrollbar{
-      /* display: none */
+      display: none
     }
   }
 

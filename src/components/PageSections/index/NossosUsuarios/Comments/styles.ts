@@ -14,6 +14,7 @@ export const Container = styled.div`
   
   .wrapper{
     display: flex;
+    gap: 1rem;
     padding: 0 0 3rem;
     transition: .2s;
   }

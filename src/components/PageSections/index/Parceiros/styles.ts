@@ -55,6 +55,11 @@ export const Container = styled.section`
         gap: 2rem;
         overflow: auto;
         padding: 1rem 0;
+        transition: .2s;
+
+        &::-webkit-scrollbar{
+          display: none;
+        }
       }
     }
   }

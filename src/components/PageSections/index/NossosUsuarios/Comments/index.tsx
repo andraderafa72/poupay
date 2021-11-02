@@ -21,9 +21,9 @@ export function Comentarios() {
 
   function handleSumPosX() {
     if (posX === 0) {
-      setPosX(width);
-    } else if (posX === width) {
-      setPosX(width * 2);
+      setPosX(width + 16);
+    } else if (posX === width  + 16) {
+      setPosX(width * 2  + 16);
     } else {
       setPosX(0);
     }
@@ -31,11 +31,11 @@ export function Comentarios() {
 
   function handleSubPosX() {
     if (posX === 0) {
-      setPosX(1150);
-    } else if (posX === 575) {
+      setPosX(width * 2 + 16);
+    } else if (posX === width + 16) {
       setPosX(0);
     } else {
-      setPosX(575);
+      setPosX(width + 16);
     }
   }
 

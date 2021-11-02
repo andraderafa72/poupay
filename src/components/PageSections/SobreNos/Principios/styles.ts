@@ -38,6 +38,7 @@ export const Container = styled.section`
       padding: 0;
       display: flex;
       flex-wrap: wrap;
+      width: 100%;
     }
 
     span{
@@ -60,19 +61,15 @@ export const Container = styled.section`
     .image{
       transform: translate3D(-25%, 5%, 0);
     }
-
-    .valores{
-      width: 100%;
-    }
     
     .cards{
-      width: 100%;
-      display: grid;
-      grid-gap: 1.5rem;
-      /* grid-template-columns: repeat(5, 1fr); */
-      grid-template-columns: repeat(auto-fit, minmax(225px, auto));
-      /* grid-template-rows: repeat(1fr, 4); */
-
+      width: 100%;  
+      > div {
+        width: 1300px;
+        display: flex;
+        gap: 2rem;
+        overflow: visible;
+      }
     }
   }
 `;

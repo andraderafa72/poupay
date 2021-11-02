@@ -3,7 +3,7 @@ import { Container } from "./styles";
 import vantagens from './assets/vantagens.svg';
 import blob from './assets/blob-vantagens.svg';
 import { PrimaryButton } from "../../../Button";
-import { useState } from "react";
+import { useRef } from "react";
 import left from '../../../../assets/img/left.svg'
 import right from '../../../../assets/img/right.svg'
 
@@ -11,22 +11,16 @@ import 'swiper/swiper-bundle.min.css'
 import 'swiper/swiper.min.css'
 
 export function Vantagens() {
-  const [posX, setPosX] = useState(0)
+  const ref = useRef<HTMLDivElement>(null)
 
   function handleSumPosX() {
-    if (posX >= 700) {
-      setPosX(0);
-    } else {
-      setPosX(posX + 250);
-    }
+    if(!ref.current) return 
+    ref.current.scrollLeft = ref.current.scrollLeft + 300
   }
 
   function handleSubPosX() {
-    if (posX <= 0) {
-      setPosX(700);
-    } else {
-      setPosX(posX - 250 < 0 ? 0 : posX - 250);
-    }
+    if(!ref.current) return 
+    ref.current.scrollLeft = ref.current.scrollLeft - 300
   }
 
   return (
@@ -48,9 +42,7 @@ export function Vantagens() {
             </button>
           </div>
 
-          <div className="wrapper" style={{
-            transform: `translateX(-${posX}px)`
-          }}>
+          <div className="wrapper" ref={ref}>
             <VantagemCard />
             <VantagemCard />
             <VantagemCard />

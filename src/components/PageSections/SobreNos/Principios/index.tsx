@@ -16,26 +16,24 @@ export function Principios() {
         </header>
 
         <main>
-          <span>Valores</span>
+        <span>Valores</span>
 
-          <div className="valores">
-            <div className="cards">
+          <div className="cards">
+            <div className="">
               <PrincipiosCard />
               <PrincipiosCard />
               <PrincipiosCard />
               <PrincipiosCard />
               <PrincipiosCard />
-              
-              <div>
-                <span>Valores</span>
-                <PrincipiosCard />
-              </div>
+            </div>
+            <div>
+              <span>Missão</span>
+              <PrincipiosCard />
+            </div>
 
-              <div>
-                <span>Valores</span>
-                <PrincipiosCard />
-              </div>
-
+            <div>
+              <span>Visão</span>
+              <PrincipiosCard />
             </div>
           </div>
 
