@@ -59,4 +59,20 @@ export const Container = styled.section`
       max-height: 800px;
     }
   }
+
+  @media(max-width: 768px){
+    main .center img{
+      transform:translate3D(-25%, -17%, 0);
+    }
+  }
+  @media(max-width: 425px){
+    main .center img{
+      transform:translate3D(-36%, -17%, 0);
+    }
+  }
+  @media(max-width: 375px){
+    main .center img{
+      transform:translate3D(-38%, -17%, 0);
+    }
+  }
 `;
