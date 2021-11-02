@@ -34,7 +34,7 @@ export const Container = styled.section<MainBannerProps>`
   display: flex;
   align-items: center;
   position: relative;
-
+  margin-top: 3.5rem;
   .wrapper{
     max-width: 1320px;   
     display: flex;
@@ -48,6 +48,7 @@ export const Container = styled.section<MainBannerProps>`
     top: 50%;
     right: 0;
     height: 525px;
+    max-height: 80vh;
     max-width: 60%;
     transform: translateY(-50%);
     overflow: hidden;
@@ -85,11 +86,17 @@ export const Container = styled.section<MainBannerProps>`
   }
 
   @media(max-width: 768px){
-    padding-top: 3rem;
-    margin-top: 3rem;
+    /* padding-top: 3rem; */
+    /* margin-top: 3rem;
     min-height: 100%;
     .image{
       min-height: 410px;
+    } */
+    min-height: 500px;
+  }
+  @media(max-width:425px){
+    .content h1{
+      font-size: 2.75rem;
     }
   }
 `;

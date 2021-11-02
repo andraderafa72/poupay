@@ -38,7 +38,11 @@ export const Container = styled.section`
       width: 40%;
 
       img{
-        width: 100%;
+        display: block;
+        object-fit: cover;
+        border-radius: 1rem;
+        margin: 0 auto;
+        width: 90%;
       }
     }
 
@@ -53,21 +57,35 @@ export const Container = styled.section`
       border-radius: 1rem;
     }
   }
+
+  @media(max-width: 1368px) and (min-width: 1120px){
+    .wrapper{
+      max-height: 75vh;
+      .image{
+        width: 50%;
+        img{
+
+          max-height: 70vh;
+        }
+      }
+    }
+  }
   @media(max-width:768px){
     margin-bottom: 12rem;
     .wrapper{
       flex-direction: column-reverse;
       gap: 2rem;
       .image{
-        width: 80%;
+        width: 100%;
       }
       
       .content{
+        width: 80%;
         padding-right: 1.5rem;
       }
 
       .background{
-        width: 70%;
+        width: 82.5%;
         height: 110%;
         top: 0%;
         left: 50%;
@@ -82,7 +100,7 @@ export const Container = styled.section`
       flex-direction: column-reverse;
       gap: 2rem;
       .image{
-        width: 95%;
+        width: 100%;
       }
       
       .content{

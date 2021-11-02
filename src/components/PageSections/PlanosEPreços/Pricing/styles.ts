@@ -23,7 +23,7 @@ export const Container = styled.section`
     }
   }
 
-  main{
+  main.desktop{
 
     .wrapper{
       width: 100%;
@@ -176,6 +176,120 @@ export const Container = styled.section`
       span, p{
         color: var(--text-light)
       }
+    }
+  }
+
+  main.mobile{
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    /* justify-content: center; */
+    padding-bottom: 1rem;
+    overflow: auto;
+
+    .col-1, .col-2, .col-3{
+      padding: 2rem;
+      width: 90%;
+      min-width: 315px;
+      border-radius: 1rem;
+
+      button{
+        display: block;
+        margin: 1rem auto 0;
+      }
+      .pricing{
+        span{
+          margin-bottom: 1rem;
+        }
+        p{
+          font-size: .95rem;
+          
+          strong{
+            font-size: 2.25rem;
+          }
+
+          span{
+            font-size: 1rem;
+            color: var(--text-light);
+          }
+        }
+      }
+
+      .plano{
+        margin-top: 1rem;
+        p{
+          width: 100%;
+          height: 3.45rem;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+          display: flex;
+          align-items: center;
+
+
+          img{
+            width: 2rem;
+            height: 2rem;
+            object-fit: contain;
+            margin-right: .75rem;
+          }
+        }
+      }
+    }
+
+    .col-1, .col-3{
+      border: 1px solid #cecece;
+      color:var(--text-body);
+
+      .pricing{
+        p{
+          color: var(--text-dark);
+        }
+      }
+    }
+
+    .col-2{
+      background: var(--blue-500);
+      color:var(--text-light) ;
+      height: 600px;
+      .pricing{
+        p{
+          font-size: 1rem;
+          
+          strong{
+            font-size: 2.5rem;
+          }
+
+          span{
+            font-size: 1.1rem;
+            color: var(--text-body);
+          }
+        }
+      }
+
+      button{
+        margin-top: 2.5rem;
+        background: var(--pink-400);
+      }
+    }
+    .col-1{
+        margin-left: 2rem;
+      }
+
+      .col-3{
+        margin-right: 2rem;
+      }
+  }
+
+  @media(max-width: 1023px){
+    padding: 0;
+    header{
+      padding: 0 2rem;
+      h2{
+        text-align: center;
+      }
+    }
+    main.desktop{
+      display: none;
     }
   }
 `;

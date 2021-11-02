@@ -8,10 +8,11 @@ interface HeaderProps {
 export const Container = styled.header<HeaderProps>`
   height: 8rem;
   width: 100%; 
-  position:  ${props => props.page === 'home' ? 'absolute' : 'sticky' };
+  position:  ${props => props.page === 'home' ? 'absolute' : 'fixed' };
   top: 0;
   left: 0;
   right: 0;
+  bottom: auto;
   z-index: 9;
   background: ${props => props.page === 'home' ? 'transparent' : 'var(--purple-400)' };
   padding: 2rem;
@@ -178,4 +179,13 @@ export const Container = styled.header<HeaderProps>`
       }
     }
   }
-  `;
+
+  @media(max-width: 1368px){
+    height: 6.5rem;
+    .wrapper{
+      img{
+        height: 85px;
+      }
+    }
+  }
+`;

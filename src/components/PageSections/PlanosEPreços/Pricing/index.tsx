@@ -1,8 +1,8 @@
 import { PrimaryButton } from "../../../Button";
 import { Container } from "./styles";
-import check from '../shared/check.svg';
-import pinkCheck from './assets/pink-check.svg';
-import not from './assets/not.svg';
+import check from "../shared/check.svg";
+import pinkCheck from "./assets/pink-check.svg";
+import not from "./assets/not.svg";
 
 export function Pricing() {
   return (
@@ -12,9 +12,8 @@ export function Pricing() {
         <span>Sem contratos ou surpresas extras</span>
       </header>
 
-      <main>
+      <main className="desktop">
         <div className="wrapper">
-
           <div className="col-1">
             <div className="space"></div>
             <div className="todos-os-beneficios">
@@ -65,7 +64,6 @@ export function Pricing() {
                 </p>
               </div>
             </div>
-
           </div>
 
           <div className="col-3">
@@ -107,7 +105,6 @@ export function Pricing() {
                 <PrimaryButton>Escolher plano</PrimaryButton>
               </div>
             </div>
-
           </div>
 
           <div className="col-4">
@@ -120,7 +117,6 @@ export function Pricing() {
             </div>
 
             <div className="wrapper">
-
               <div className="plano-premium">
                 <p>
                   <img src={check} alt="" />
@@ -147,11 +143,150 @@ export function Pricing() {
                   <img src={check} alt="" />
                 </p>
               </div>
-
             </div>
-
           </div>
+        </div>
+      </main>
 
+      <main className="mobile">
+        <div className="col-1">
+          <div className="pricing">
+            <span>Free</span>
+            <p className="price">
+              R$ <strong>0,00</strong> <span>/mês</span>
+            </p>
+          </div>
+          <div className="wrapper">
+            <div className="plano">
+              <p>
+                <img src={check} alt="" />
+                Lorem ipsum dolor sit amet,
+              </p>
+              <p>
+                <img src={check} alt="" />
+                Lorem ipsum dolor sit amet,
+              </p>
+              <p>
+                <img src={check} alt="" />
+                Lorem ipsum dolor sit amet,
+              </p>
+              <p>
+                <img src={check} alt="" />
+                Lorem ipsum dolor sit amet,
+              </p>
+              <p>
+                <img src={check} alt="" />
+                Lorem ipsum dolor sit amet,
+              </p>
+              <p>
+                <img src={not} alt="" />
+                Lorem ipsum dolor sit amet,
+              </p>
+              <p>
+                <img src={not} alt="" />
+                Lorem ipsum dolor sit amet,
+              </p>
+              <p>
+                <img src={not} alt="" />
+                Lorem ipsum dolor sit amet,
+              </p>
+            </div>
+          </div>
+          <PrimaryButton>Escolher Plano</PrimaryButton>
+
+        </div>
+
+        <div className="col-2">
+          <div className="pricing">
+            <span>Premium anual</span>
+            <p className="price">
+              R$ <strong>0,00</strong> <span>/mês</span>
+            </p>
+          </div>
+          <div className="wrapper">
+            <div className="plano">
+              <p>
+                <img src={pinkCheck} alt="" />
+                Lorem ipsum dolor sit amet,
+              </p>
+              <p>
+                <img src={pinkCheck} alt="" />
+                Lorem ipsum dolor sit amet,
+              </p>
+              <p>
+                <img src={pinkCheck} alt="" />
+                Lorem ipsum dolor sit amet,
+              </p>
+              <p>
+                <img src={pinkCheck} alt="" />
+                Lorem ipsum dolor sit amet,
+              </p>
+              <p>
+                <img src={pinkCheck} alt="" />
+                Lorem ipsum dolor sit amet,
+              </p>
+              <p>
+                <img src={pinkCheck} alt="" />
+                Lorem ipsum dolor sit amet,
+              </p>
+              <p>
+                <img src={pinkCheck} alt="" />
+                Lorem ipsum dolor sit amet,
+              </p>
+              <p>
+                <img src={pinkCheck} alt="" />
+                Lorem ipsum dolor sit amet,
+              </p>
+            </div>
+          </div>
+          <PrimaryButton>Escolher Plano</PrimaryButton>
+
+        </div>
+
+        <div className="col-3">
+          <div className="pricing">
+            <span>Premium mensal</span>
+            <p className="price">
+              R$ <strong>0,00</strong> <span>/mês</span>
+            </p>
+          </div>
+          <div className="wrapper">
+            <div className="plano">
+              <p>
+                <img src={check} alt="" />
+                Lorem ipsum dolor sit amet,
+              </p>
+              <p>
+                <img src={check} alt="" />
+                Lorem ipsum dolor sit amet,
+              </p>
+              <p>
+                <img src={check} alt="" />
+                Lorem ipsum dolor sit amet,
+              </p>
+              <p>
+                <img src={check} alt="" />
+                Lorem ipsum dolor sit amet,
+              </p>
+              <p>
+                <img src={check} alt="" />
+                Lorem ipsum dolor sit amet,
+              </p>
+              <p>
+                <img src={check} alt="" />
+                Lorem ipsum dolor sit amet,
+              </p>
+              <p>
+                <img src={check} alt="" />
+                Lorem ipsum dolor sit amet,
+              </p>
+              <p>
+                <img src={check} alt="" />
+                Lorem ipsum dolor sit amet,
+              </p>
+            </div>
+          </div>
+          <PrimaryButton>Escolher Plano</PrimaryButton>
         </div>
       </main>
     </Container>
