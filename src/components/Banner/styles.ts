@@ -83,4 +83,13 @@ export const Container = styled.section<MainBannerProps>`
       }
     }
   }
+
+  @media(max-width: 768px){
+    padding-top: 3rem;
+    margin-top: 3rem;
+    min-height: 100%;
+    .image{
+      min-height: 410px;
+    }
+  }
 `;

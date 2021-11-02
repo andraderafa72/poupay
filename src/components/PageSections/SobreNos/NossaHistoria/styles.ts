@@ -63,6 +63,7 @@ export const Container = styled.section`
       }
       
       .content{
+        padding-right: 1.5rem;
       }
 
       .background{

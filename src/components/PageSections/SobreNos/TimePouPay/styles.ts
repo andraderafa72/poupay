@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 
 export const Container = styled.section`
-  margin: -8rem 0 10rem;
-  
+  margin: -8rem 0 5rem;
+  padding: 1rem;
   .wrapper{
     /* padding-bottom: 17.5rem; */
     max-width: 1320px;   

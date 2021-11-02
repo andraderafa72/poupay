@@ -80,4 +80,24 @@ export const Container = styled.section`
     border-radius: 1rem;
   }
 
+  @media(max-width: 768px){
+    .wrapper{
+      flex-direction: column;
+
+      .image{
+        width: 105%;
+      }
+
+      .content{
+        width: 95%;
+      }
+    }
+    .background{
+      width: 85%;
+      height: 100%;
+      top: 0;
+      left: 7.5%;
+    }
+
+  }
 `;

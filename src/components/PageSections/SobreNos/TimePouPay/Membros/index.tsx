@@ -1,25 +1,19 @@
-import { useState } from "react";
+import { useRef } from "react";
 import left from '../../../../../assets/img/left.svg'
 import right from '../../../../../assets/img/right.svg'
 import { Container } from "./styles";
 
 export function Membros() {
-  const [posX, setPosX] = useState(0)
+  const ref = useRef<HTMLDivElement>(null);
 
   function handleSumPosX() {
-    if (posX >= 1200) {
-      setPosX(0);
-    } else {
-      setPosX(posX + 230);
-    }
+    if(!ref.current) return;
+    ref.current.scrollLeft = ref.current.scrollLeft + 200
   }
 
   function handleSubPosX() {
-    if (posX <= 0) {
-      setPosX(1200);
-    } else {
-      setPosX(posX - 230 < 0 ? 0 : posX - 230);
-    }
+    if(!ref.current) return;
+    ref.current.scrollLeft = ref.current.scrollLeft - 200
   }
 
 
@@ -34,9 +28,7 @@ export function Membros() {
         </button>
       </div>
 
-      <div className="wrapper" style={{
-        transform: `translateX(-${posX}px)`
-      }}>
+      <div className="wrapper" ref={ref}>
 
         <Membro />
         <Membro />

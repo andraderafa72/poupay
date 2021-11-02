@@ -56,7 +56,7 @@ export const Container = styled.section`
         border: none;
         /* height: 2.5rem; */
         padding:1rem 1rem .5rem;
-        border-bottom: 1px solid #eee;
+        border-bottom: 1px solid #cecece;
         color: var(--text-dark);
         margin-bottom: 2rem;
         transition: .2s;
@@ -82,6 +82,18 @@ export const Container = styled.section`
       textarea{
         resize:none;
       }
+
+      button{
+        display: block;
+        margin-left: auto;
+      }
+    }
+  }
+
+  @media(max-width: 1024px){
+    margin-bottom: 3rem;
+    .left{
+      display: none;
     }
   }
 `;

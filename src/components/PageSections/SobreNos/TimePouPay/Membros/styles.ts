@@ -9,14 +9,19 @@ export const Container = styled.div`
   
   .wrapper{
     display: flex;
-    gap: 0;
+    gap: 0.5rem;
+    overflow: auto;
     transition: .2s;
+
+    &::-webkit-scrollbar{
+      display: none;
+    }
   }
 
   .background{
     position: absolute;
     width: 150%;
-    height: 20rem;
+    height: 22rem;
     right: 0;
     top: 10%;
     left: 0;
@@ -48,10 +53,11 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-width: 230px;
+    min-width: 200px;
 
     strong, span{
       text-align: center;
+      max-width: 185px;
     }
     img{
       display: block;
@@ -60,6 +66,15 @@ export const Container = styled.div`
       border-radius: 100%;
       background: #fff;
       margin-bottom: 0.75rem;
+    }
+  }
+  @media(max-width:375px){
+    .wrapper{
+      gap: 0rem;
+    }
+
+    .membro{
+      min-width: 180px;
     }
   }
 `;
