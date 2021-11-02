@@ -50,7 +50,7 @@ export const Container = styled.section`
   }
 
   button{
-    margin: 5rem auto 0;
+    margin: -15rem auto 0;
   }
 
   @media(max-width: 1280px){

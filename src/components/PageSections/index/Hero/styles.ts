@@ -22,6 +22,7 @@ export const Container = styled.section`
 
     .wrapper{
       max-width: 550px;
+      max-height: 75vh;
       border-radius: 1rem;
       background: rgba(255,255,255, .20);
       padding: 3rem 2.5rem;
@@ -71,6 +72,10 @@ export const Container = styled.section`
           height: 3rem;
           border-radius: .5rem 0 0 .5rem;
           color: var(--text-light);
+
+          &:focus{
+            outline: none;
+          }
         }
 
         input{
@@ -98,11 +103,34 @@ export const Container = styled.section`
     }
   }
 
+  @media(max-width: 1368px){
+    .content{
+      .wrapper{
+        margin-top: 5rem;
+        padding: 2rem;
+        h1{
+          font-size: 2.75rem;
+        }
+        p{
+          font-size: 1rem;
+        }
+
+        .input-wrapper{
+          margin-top: 2rem;
+          label{
+            /* background-color: #6A39D1; */
+          }
+        }
+      }
+    }
+  }
+
   @media(max-width: 768px){
     background-position-x: 0%;
 
     .content{
       .wrapper{
+
         h1{
           font-size: 2.75rem;
         }
