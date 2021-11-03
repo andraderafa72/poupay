@@ -54,6 +54,7 @@ export const Container = styled.section`
       z-index: 9;
       gap: 1.5rem;
       overflow: auto;
+      padding-left: 1rem;
 
       &::-webkit-scrollbar{
         display: none;
