@@ -74,7 +74,6 @@ export const Container = styled.section`
       width: 100%;  
       display: flex;
       justify-content: space-between;
-      overflow: auto;
       gap: 1rem;
     }
     
@@ -94,6 +93,27 @@ export const Container = styled.section`
     .cards, .card-wrapper{
       &::-webkit-scrollbar{
         display: none;
+      }
+    }
+  }
+
+}
+
+  @media(max-width:1440px){
+    .wrapper{
+      .card-wrapper{
+        gap: 1.5rem;
+      }
+    }
+  }
+
+  @media(max-width:1120px){
+    .wrapper{
+      .cards{
+        overflow: auto;
+      }
+      .card-wrapper{
+        gap: 1rem;
       }
     }
   }

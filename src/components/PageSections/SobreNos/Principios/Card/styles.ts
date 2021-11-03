@@ -3,10 +3,11 @@ import blob from './card-blob.svg';
 
 export const Card = styled.div`
   border: 1px solid #ccc;
-  /* min-width: 240px; */
-  max-width: 250px;
-  width: 250px;
   /* min-height: 250px; */
+  min-width: 250px;
+    max-width: 250px;
+    width: 250px;
+
   background: var(--background-light);
   border-radius: 1rem;
   display: flex;
@@ -40,4 +41,31 @@ export const Card = styled.div`
     font-size: 1rem;
     color: var(--text-body);
    }
+
+  @media(min-width: 1120px){
+    min-width: auto;
+    max-width: 240px;
+    width: 100%;
+    
+    span{
+      font-size: .95rem
+    }
+  }
+
+  @media(min-width: 1300px){
+    min-width: 240px;
+    max-width: 240px;
+    width: 240px;
+    
+    span{
+      font-size: .95rem
+    }
+      
+  }
+
+  @media(min-width:1600px){
+    min-width: 250px;
+    max-width: 250px;
+    width: 250px;
+  }
 `;

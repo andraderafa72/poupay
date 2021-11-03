@@ -82,6 +82,10 @@ export const Container = styled.section`
       .content{
         width: 80%;
         padding-right: 1.5rem;
+
+        p{
+          font-size: 1rem;
+        }
       }
 
       .background{
