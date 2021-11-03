@@ -134,7 +134,7 @@ export const Container = styled.section`
   }
 
   @media(max-width: 768px){
-    background-position-x: 0%;
+    background-position-x: 25%;
     min-height: 640px;
 
     .content{
@@ -159,9 +159,22 @@ export const Container = styled.section`
     }
   }
 
+  @media(max-width:425px){
+    background-position-x: 0;
+    min-height: 480px;
+  }
+
   @media(max-width:375px){
     .content .wrapper{
-      min-height: 500px;
+      min-height: 400px;
+
+      h1{
+        font-size: 2.25rem;
+      }
+
+      p{
+        font-size: 1rem;
+      }
     } 
   }
   @media(max-width:320px){
@@ -169,7 +182,7 @@ export const Container = styled.section`
       padding: 1rem 1.5rem;
       min-height: 450px;
       h1{
-        font-size: 2.25rem;
+        font-size: 2rem;
       }
     } 
   }
