@@ -36,9 +36,6 @@ export const Container = styled.section`
       max-width: 600px;
       width: 35%;
       img{
-        /* position: absolute;
-        top: -25%;
-        left: -27.5%; */
         transform: scale(.95) translate3D(-20%, -17%, 0);
         z-index: -1;
       }
@@ -49,7 +46,6 @@ export const Container = styled.section`
     }
 
     .bottom{
-      margin-top: -17.5rem;
       display: none;
       z-index: 9;
       gap: 1.5rem;
@@ -63,19 +59,23 @@ export const Container = styled.section`
   }
 
   button{
-    margin: 4rem auto 0;
+    margin: -15rem auto 0;
   }
 
   @media(max-width:1024px){
     main{
       flex-direction: column;
-      /* align-items: center; */
       .center{
         margin: 0 auto;
       }
       .bottom{
+        margin-top: -17.5rem;
         display: flex;
       }
+    }
+
+    button{
+      margin: 4rem auto 0;
     }
   }
 
