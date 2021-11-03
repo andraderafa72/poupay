@@ -14,6 +14,7 @@ export const Container = styled.section`
     width: 100%;
 
     header{
+      padding: 0 2rem;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -35,7 +36,8 @@ export const Container = styled.section`
   
 
     main{
-      padding: 0;
+      padding: 0 2rem;
+      padding-right: 0;
       display: flex;
       flex-wrap: wrap;
       width: 100%;
@@ -55,6 +57,11 @@ export const Container = styled.section`
       z-index: -1;
     }
 
+    p{
+      margin: 1.5rem 0 1rem;
+      text-align: center;
+    }
+
     .blob{
       transform: translate3D(17.5%, 25%, 0) scale(.9);
     }
@@ -63,12 +70,53 @@ export const Container = styled.section`
     }
     
     .cards{
+      margin: 0 auto;
       width: 100%;  
-      > div {
-        width: 1300px;
-        display: flex;
-        gap: 2rem;
-        overflow: visible;
+      display: flex;
+      justify-content: space-between;
+      overflow: auto;
+      gap: 1rem;
+    }
+    
+    .card-wrapper{
+      display: flex;
+      gap: 1rem;
+      overflow: auto;
+      justify-content: space-between;
+      
+      .space{
+        display: block;
+        min-width: 250px;
+      }
+    }
+  }
+
+  @media(max-width:768px){
+    .wrapper{
+      .image{
+        display: none;
+      }
+
+      .blob{
+        max-width: 600px;
+        transform: translate3D(25%, -5%, 0) scale(.9);
+      }
+    }
+  }
+
+  @media(max-width:475px){
+    .wrapper{
+      span, p{
+        text-align: left;
+        padding-left: .5rem;
+      }
+    }
+  }
+
+  @media(max-width:320px){
+    .wrapper{
+      .blob{
+        transform: translate3D(35%, -5%, 0) scale(.9);
       }
     }
   }

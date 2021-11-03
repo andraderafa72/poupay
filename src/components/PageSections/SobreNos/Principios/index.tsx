@@ -16,25 +16,29 @@ export function Principios() {
         </header>
 
         <main>
-        <span>Valores</span>
+          <span>Valores</span>
 
           <div className="cards">
-            <div className="">
-              <PrincipiosCard />
-              <PrincipiosCard />
-              <PrincipiosCard />
-              <PrincipiosCard />
+            <PrincipiosCard />
+            <PrincipiosCard />
+            <PrincipiosCard />
+            <PrincipiosCard />
+            <PrincipiosCard />
+          </div>
+
+          <div className="card-wrapper">
+            <div className="missao">
+              <p>Missão</p>
               <PrincipiosCard />
             </div>
-            <div>
-              <span>Missão</span>
+            <div className="visao">
+              <p>Visão</p>
               <PrincipiosCard />
             </div>
 
-            <div>
-              <span>Visão</span>
-              <PrincipiosCard />
-            </div>
+            <div className="space"></div>
+            <div className="space"></div>
+            <div className="space"></div>
           </div>
 
         </main>
