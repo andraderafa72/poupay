@@ -181,12 +181,16 @@ export const Container = styled.section`
 
   main.mobile{
     width: 100%;
-    display: flex;
+    display: none;
     gap: 1rem;
     align-items: center;
-    /* justify-content: center; */
     padding-bottom: 1rem;
     overflow: auto;
+
+    &::after, &::before{
+      content: '';
+      margin: auto;
+    }
 
     .col-1, .col-2, .col-3{
       padding: 2rem;
@@ -239,6 +243,7 @@ export const Container = styled.section`
     .col-1, .col-3{
       border: 1px solid #cecece;
       color:var(--text-body);
+      /* max-height: 550px; */
 
       .pricing{
         p{
@@ -250,7 +255,7 @@ export const Container = styled.section`
     .col-2{
       background: var(--blue-500);
       color:var(--text-light) ;
-      height: 600px;
+      min-height: 620px;
       .pricing{
         p{
           font-size: 1rem;
@@ -272,12 +277,12 @@ export const Container = styled.section`
       }
     }
     .col-1{
-        margin-left: 2rem;
-      }
+      margin-left: 2rem;
+    }
 
-      .col-3{
-        margin-right: 2rem;
-      }
+    .col-3{
+      margin-right: 2rem;
+    }
   }
 
   @media(max-width: 1023px){
@@ -290,6 +295,20 @@ export const Container = styled.section`
     }
     main.desktop{
       display: none;
+    }
+    main.mobile{
+      display: flex;
+      &::-webkit-scrollbar{
+        /* display: none; */
+      }
+    }
+  }
+  @media(max-width:320px){
+    main.mobile{
+      gap: .5rem;
+      .col-1, .col-2, .col-3{
+        min-width: 285px;
+      }
     }
   }
 `;

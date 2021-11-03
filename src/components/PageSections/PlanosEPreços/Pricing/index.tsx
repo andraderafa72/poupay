@@ -3,10 +3,38 @@ import { Container } from "./styles";
 import check from "../shared/check.svg";
 import pinkCheck from "./assets/pink-check.svg";
 import not from "./assets/not.svg";
+import { useEffect, useRef, useState } from "react";
 
 export function Pricing() {
+  const ref = useRef<HTMLDivElement>(null)
+  const containerRef = useRef<HTMLDivElement>(null)
+  const [scroll, setScroll] = useState(0)
+
+  useEffect(() => {
+    setScroll(331);
+  }, []);
+  
+  
+  if(ref.current && containerRef.current){
+    if(ref.current.clientWidth >= 410 && ref.current.clientWidth < 440){
+      ref.current.scrollLeft = ref.current.clientWidth / 1.35
+    } else if(ref.current.clientWidth >= 750 && ref.current.clientWidth < 780){
+      ref.current.scrollLeft = 140
+    } else if (ref.current.clientWidth < 410 && ref.current.clientWidth > 340){
+      ref.current.scrollLeft = ref.current.clientWidth / 1.1
+    } else if (ref.current.clientWidth < 340){
+      ref.current.scrollLeft = ref.current.clientWidth / 1.035
+    }
+  }
+
+  function handleScroll() {
+    if(ref.current){
+      console.log(ref.current.scrollLeft);
+    }
+  }
+
   return (
-    <Container>
+    <Container ref={containerRef}>
       <header>
         <h2>Simples, valores transparentes</h2>
         <span>Sem contratos ou surpresas extras</span>
@@ -148,7 +176,7 @@ export function Pricing() {
         </div>
       </main>
 
-      <main className="mobile">
+      <main className="mobile"  ref={ref} onScroll={handleScroll}>
         <div className="col-1">
           <div className="pricing">
             <span>Free</span>

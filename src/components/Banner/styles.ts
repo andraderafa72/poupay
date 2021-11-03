@@ -85,13 +85,10 @@ export const Container = styled.section<MainBannerProps>`
     }
   }
 
+  @media(min-width: 1600px){
+    margin-top: 6rem;
+  }
   @media(max-width: 768px){
-    /* padding-top: 3rem; */
-    /* margin-top: 3rem;
-    min-height: 100%;
-    .image{
-      min-height: 410px;
-    } */
     min-height: 500px;
   }
   @media(max-width:425px){
