@@ -21,7 +21,7 @@ export function TimePouPay() {
               Administrativo | Financeiro
             </strong>
 
-            <Membros />
+            <Membros list="ADM"/>
           </div>
         </main>
 
@@ -31,7 +31,7 @@ export function TimePouPay() {
               Produto | TI
             </strong>
 
-            <Membros />
+            <Membros list="TI"/>
           </div>
         </main>
       </div>

@@ -19,21 +19,49 @@ export function Principios() {
           <span>Valores</span>
 
           <div className="cards">
-            <PrincipiosCard />
-            <PrincipiosCard />
-            <PrincipiosCard />
-            <PrincipiosCard />
-            <PrincipiosCard />
+            <PrincipiosCard
+              image={'a'}
+              title="Lorem ipsum dolor"
+              content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
+            />
+            <PrincipiosCard
+              image={'a'}
+              title="Lorem ipsum dolor"
+              content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
+            />
+            <PrincipiosCard
+              image={'a'}
+              title="Lorem ipsum dolor"
+              content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
+            />
+            <PrincipiosCard
+              image={'a'}
+              title="Lorem ipsum dolor"
+              content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
+            />
+            <PrincipiosCard
+              image={'a'}
+              title="Lorem ipsum dolor"
+              content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
+            />
           </div>
 
           <div className="card-wrapper">
             <div className="missao">
               <p>Missão</p>
-              <PrincipiosCard />
+              <PrincipiosCard
+                image={'a'}
+                title="Lorem ipsum dolor"
+                content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
+              />
             </div>
             <div className="visao">
               <p>Visão</p>
-              <PrincipiosCard />
+              <PrincipiosCard
+                image={'a'}
+                title="Lorem ipsum dolor"
+                content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
+              />
             </div>
 
             <div className="space"></div>

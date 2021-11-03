@@ -9,7 +9,7 @@ export const Container = styled.div`
   
   .wrapper{
     display: flex;
-    gap: 0.5rem;
+    /* gap: 0.5rem; */
     overflow: auto;
     transition: .2s;
 

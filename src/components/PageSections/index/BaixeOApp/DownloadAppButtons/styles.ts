@@ -12,6 +12,7 @@ export const ButtonsContainer = styled.div`
     border: none;
     border-radius: .5rem;
     max-width: 200px;
+    min-width: 175px;
     color: var(--text-light);
     text-align: left;
     position: relative;
@@ -21,6 +22,13 @@ export const ButtonsContainer = styled.div`
       left: 0.5rem;
       top: 0rem;
       height: 100%;
+    }
+  }
+
+  @media(max-width:375px){
+    button{
+      min-width: 150px;
+      font-size: .9rem;
     }
   }
 `;

@@ -50,7 +50,7 @@ export const Container = styled.section`
       margin-bottom: 1rem;
     }
 
-    img{
+    > img{
       position: absolute;
       bottom: 0;
       right: 0;
@@ -87,6 +87,7 @@ export const Container = styled.section`
       .space{
         display: block;
         min-width: 250px;
+        width: 250px;
       }
     }
 
