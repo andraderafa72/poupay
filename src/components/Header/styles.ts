@@ -118,6 +118,16 @@ export const Container = styled.header<HeaderProps>`
     }
   }
 
+
+  @media(max-width: 1368px){
+    height: 6.5rem;
+    .wrapper{
+      img{
+        height: 85px;
+      }
+    }
+  }
+  
   @media (max-width:992px){
     .wrapper{
       position: relative;
@@ -184,11 +194,12 @@ export const Container = styled.header<HeaderProps>`
     }
   }
 
-  @media(max-width: 1368px){
-    height: 6.5rem;
+  @media(max-width:374px){
     .wrapper{
-      img{
-        height: 85px;
+      > a img{
+        display: inline-block;
+        margin-top: .35rem;
+        width: 75%;
       }
     }
   }

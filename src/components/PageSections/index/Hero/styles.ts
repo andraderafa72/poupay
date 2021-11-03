@@ -142,7 +142,7 @@ export const Container = styled.section`
         min-height: 432px;
         h1{
           font-size: 2.75rem;
-          max-width: 350px;
+          max-width: 400px;
         }
 
         p{
@@ -152,16 +152,29 @@ export const Container = styled.section`
 
         .input-wrapper{
           label{
-            background: #6838D0;
+            background: #8D45DF;
           }
         }
       }
     }
   }
-
+  
   @media(max-width:425px){
     background-position-x: 0;
-    min-height: 480px;
+    .content .wrapper{
+      min-height: 400px;
+      .input-wrapper{
+        label{
+          background: #6838D0;
+        }
+      }
+    }
+  }
+
+  @media(max-width:406px){
+    .content .wrapper{
+      min-height: 500px;
+    }
   }
 
   @media(max-width:375px){
@@ -180,7 +193,7 @@ export const Container = styled.section`
   @media(max-width:320px){
     .content .wrapper{
       padding: 1rem 1.5rem;
-      min-height: 450px;
+      min-height: 375px;
       h1{
         font-size: 2rem;
       }
