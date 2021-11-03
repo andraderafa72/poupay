@@ -89,6 +89,12 @@ export const Container = styled.section`
         min-width: 250px;
       }
     }
+
+    .cards, .card-wrapper{
+      &::-webkit-scrollbar{
+        display: none;
+      }
+    }
   }
 
   @media(max-width:768px){
@@ -100,6 +106,22 @@ export const Container = styled.section`
       .blob{
         max-width: 600px;
         transform: translate3D(25%, -5%, 0) scale(.9);
+      }
+
+      .cards{
+        >div:last-child{
+          margin-right: 2rem;
+        }
+      }
+
+      .card-wrapper{
+        .space{
+          display: none;
+        }
+
+        .visao{
+          margin-right: 2rem;
+        }
       }
     }
   }
