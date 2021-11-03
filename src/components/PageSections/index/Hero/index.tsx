@@ -6,9 +6,9 @@ export function Hero() {
       <div className="content">
         <div className="wrapper">
           <h1>
-            Com a <span>PouPay+</span><br/>
-            você <strong>organiza </strong><br/>
-            a sua <strong>vida<br/>
+            Com a <span>PouPay+</span>
+            você <strong>organiza </strong>
+            a sua <strong>vida
             financeira!</strong>
           </h1>
           <p>

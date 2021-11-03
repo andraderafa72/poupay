@@ -3,6 +3,7 @@ import { LeftList } from "./LeftList";
 import { RightList } from "./RightList";
 import { Container } from "./styles";
 import mobile from '../shared/mobile.webp';
+import { RecursoCard } from "./Card";
 
 export function Recursos() {
   return (
@@ -21,6 +22,17 @@ export function Recursos() {
         </div>
         <div className="right">
           <RightList />
+        </div>
+
+        <div className="bottom">
+          <RecursoCard />
+          <RecursoCard />
+          <RecursoCard />
+          <RecursoCard />
+          <RecursoCard />
+          <RecursoCard />
+          <RecursoCard />
+          <RecursoCard />
         </div>
       </main>
 

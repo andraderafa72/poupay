@@ -6,8 +6,9 @@ export const Container = styled.section`
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 400px;
-  margin-top: 15rem;
+  margin-top: 10rem;
   position: relative;
+  margin-bottom: 4rem;
 
   .background{
     position: absolute;
@@ -57,6 +58,39 @@ export const Container = styled.section`
         max-height: 400px;
         height: 100%;
       }
+    }
+  }
+
+  @media(max-width:1024px){
+    background-position-x: 30%;
+  }
+  @media(max-width:768px){
+    background-position-x: 50%;
+  }
+  @media(max-width:475px){
+    background-position-x: 45%;
+    .wrapper{
+      width: 100%;
+      .info{
+        width: 100%;
+        align-items: center;
+        h2{
+          text-align: center;
+          font-size: 2rem;
+        }
+        >div{
+          /* flex-direction: column; */
+          button{
+            max-width: 175px;
+          }
+        }
+      }
+    }
+  }
+  @media(max-width:320px){
+    .wrapper .info > div button{
+      max-width: 150px;
+      font-size: .9rem;
     }
   }
 `;

@@ -95,5 +95,15 @@ export const Container = styled.section`
     .left{
       display: none;
     }
+    .right{
+      margin: 0 auto;
+      width: 75%;
+    }
+  }
+
+  @media(max-width:768px){
+    .right{
+      width: 100%;
+    }
   }
 `;

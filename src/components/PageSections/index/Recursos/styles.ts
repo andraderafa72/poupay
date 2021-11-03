@@ -47,10 +47,35 @@ export const Container = styled.section`
     .left, .right{
       margin-top: 3rem;
     }
+
+    .bottom{
+      margin-top: -17.5rem;
+      display: none;
+      z-index: 9;
+      gap: 1.5rem;
+      overflow: auto;
+
+      &::-webkit-scrollbar{
+        display: none;
+      }
+    }
   }
 
   button{
-    margin: -15rem auto 0;
+    margin: 4rem auto 0;
+  }
+
+  @media(max-width:1024px){
+    main{
+      flex-direction: column;
+      /* align-items: center; */
+      .center{
+        margin: 0 auto;
+      }
+      .bottom{
+        display: flex;
+      }
+    }
   }
 
   @media(max-width: 1280px){

@@ -107,6 +107,7 @@ export const Container = styled.section`
       gap: 1rem;
     }
   }
-
-  
+  @media(max-width:767px){
+    display: none;
+  }
 `;

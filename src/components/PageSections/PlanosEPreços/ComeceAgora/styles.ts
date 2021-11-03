@@ -30,6 +30,7 @@ export const Container = styled.section`
     .info{
       max-width: 650px;
       text-align: center;
+      z-index: 2;
 
       h2{
         margin-bottom: 3rem;
@@ -46,6 +47,23 @@ export const Container = styled.section`
         /* width: 100%; */
         max-height: 400px;
         height: 100%;
+      }
+    }
+  }
+  @media(max-width:1024px){
+    .wrapper{
+      flex-direction: column;
+      align-items: center;
+      
+      .info, .image{
+        width: 100%;
+      }
+      .image{
+        padding-left: 5rem;
+        img{
+          position: initial;
+          /* right: -80%;  */
+        }
       }
     }
   }

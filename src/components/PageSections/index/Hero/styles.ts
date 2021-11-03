@@ -3,7 +3,8 @@ import hero from './assets/hero.webp'
 
 export const Container = styled.section`
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 840px;
   background: url(${hero});
   background-size: cover;
   background-position: center;
@@ -23,6 +24,7 @@ export const Container = styled.section`
     .wrapper{
       max-width: 550px;
       max-height: 75vh;
+      min-height: 564px;
       border-radius: 1rem;
       background: rgba(255,255,255, .20);
       padding: 3rem 2.5rem;
@@ -34,6 +36,7 @@ export const Container = styled.section`
         font-weight: normal;
         line-height: 130%;
         color: var(--text-light);
+        max-width: 500px;
 
         span{
           color: var(--pink-400);
@@ -108,6 +111,7 @@ export const Container = styled.section`
       .wrapper{
         margin-top: 5rem;
         padding: 2rem;
+        min-height: 391px;
         h1{
           font-size: 2.75rem;
         }
@@ -125,14 +129,20 @@ export const Container = styled.section`
     }
   }
 
+  @media(max-width:1024px){
+    min-height: 580px;
+  }
+
   @media(max-width: 768px){
     background-position-x: 0%;
+    min-height: 640px;
 
     .content{
       .wrapper{
-
+        min-height: 432px;
         h1{
           font-size: 2.75rem;
+          max-width: 350px;
         }
 
         p{
@@ -147,5 +157,20 @@ export const Container = styled.section`
         }
       }
     }
+  }
+
+  @media(max-width:375px){
+    .content .wrapper{
+      min-height: 500px;
+    } 
+  }
+  @media(max-width:320px){
+    .content .wrapper{
+      padding: 1rem 1.5rem;
+      min-height: 450px;
+      h1{
+        font-size: 2.25rem;
+      }
+    } 
   }
 `;
