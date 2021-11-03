@@ -187,6 +187,10 @@ export const Container = styled.section`
     padding-bottom: 1rem;
     overflow: auto;
 
+    &::-webkit-scrollbar{
+      display: none;
+    }
+
     &::after, &::before{
       content: '';
       margin: auto;

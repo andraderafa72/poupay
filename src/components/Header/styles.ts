@@ -20,6 +20,10 @@ export const Container = styled.header<HeaderProps>`
   align-items: center;
   justify-content: center;
 
+  ${props => props.page !== 'home' ? `
+  box-shadow: 0 4px 16px 0 rgba(11,11,15, .24);
+  ` : ''}
+
   .wrapper{
     max-width: 1320px;
     margin: 0 auto;
@@ -125,7 +129,7 @@ export const Container = styled.header<HeaderProps>`
         display: block;
         position:  ${props => props.isBurgerOpen ? 'fixed' : 'absolute'};
         right:  ${props => props.isBurgerOpen ? '0' : '-1rem'};
-        top: 1.5rem;
+        top: 1.25rem;
         z-index: 4;
       }
 

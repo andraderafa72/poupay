@@ -39,7 +39,4 @@ export const Container = styled.section`
     justify-content: flex-start;
   }
 
-  @media(max-width:475px){
-    padding: 1rem;
-  }
 `;
