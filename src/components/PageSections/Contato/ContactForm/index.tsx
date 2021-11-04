@@ -20,7 +20,6 @@ export function ContactForm() {
       <div className="right">
         <header>
           <h2>Entre em contato! Adoraríamos te ouvir :)</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </header>
         <form onSubmit={handleSubmit}>
 
