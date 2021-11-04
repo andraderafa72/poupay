@@ -26,11 +26,9 @@ export function Pricing() {
       ref.current.scrollLeft = ref.current.clientWidth / 1.035
     }
   }
-
+  
   function handleScroll() {
-    if(ref.current){
-      console.log(ref.current.scrollLeft);
-    }
+    console.log(scroll);
   }
 
   return (

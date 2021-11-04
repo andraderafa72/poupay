@@ -1,10 +1,10 @@
-import { useState } from "react";
+// import { useState } from "react";
 import { useLang } from "../../../../hooks/useLang";
 import { SectionCard } from "./SectionCard";
 import { Container } from "./styles";
 
 export function CentralDeAjuda(){
-  const [pagination, setPagination] = useState('home');
+  // const [pagination, setPagination] = useState('home');
 
   const { TextContent } = useLang();
 
