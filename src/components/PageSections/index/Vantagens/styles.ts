@@ -29,10 +29,12 @@ export const Container = styled.section`
     flex-direction: column;
     width: 60%;
     padding-right: 2rem;
+    /* margin-right: 2rem; */
 
     h2{
       font-size: 2.25rem;
       max-width: 550px;
+      margin-bottom: 0.5rem;
     }
 
     p{
@@ -42,8 +44,6 @@ export const Container = styled.section`
   }
 
   .vantagens{
-    overflow: hidden;
-
 
     .buttons{
       display: flex;
@@ -52,6 +52,7 @@ export const Container = styled.section`
       padding-right: 1.5rem;
       width: 100%;
     }
+
     button{
       background: none;
       border: none;
@@ -76,17 +77,54 @@ export const Container = styled.section`
     padding: 1rem;
     padding-left: 0;
     margin: 1.5rem 0;
-    overflow: auto;
+    justify-content: space-between;
+    /* overflow: auto; */
     &::-webkit-scrollbar{
       display: none
     }
   }
 
-  @media(max-width: 768px){
+  @media(max-width: 1120px){
     flex-direction: column;
     padding-right: 0;
     .content{
+      width: 70%;
+      margin: 0 auto;
+
+      h2,p{
+        padding-right: 2rem;
+      }
+    }
+
+    img:not(.blob){
+      width: 70%;
+      margin: 0 auto 2rem;
+      transform: scale(1);
+      margin-top: 0;
+    }
+
+    img.blob{
+      max-width: 793px;
       width: 100%;
+      transform: translate3D(20%, -5%, 0);
+    }
+  }
+
+  @media(max-width: 768px){
+    flex-direction: column;
+    
+    .content{
+      width: 100%;
+      padding-right: 0;
+
+      .wrapper{
+        padding: 0;
+        overflow: auto;
+
+        >div:last-child{
+          margin-right: 2rem;
+        }
+      }
 
       h2,p{
         padding-right: 2rem;
@@ -103,7 +141,7 @@ export const Container = styled.section`
     img.blob{
       max-width: 793px;
       width: 100%;
-      transform: translate3D(-11%, -5%, 0);
+      transform: translate3D(0%, -5%, 0);
     }
   }
 `;

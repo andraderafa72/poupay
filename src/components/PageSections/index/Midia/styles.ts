@@ -81,7 +81,7 @@ export const Container = styled.section`
     }
     main{
       padding: 2rem 0;
-      padding-left: 1rem;
+      padding-left: 2rem;
       margin-bottom: 4rem;
     }
 

@@ -12,28 +12,28 @@ export function RedesSociais() {
           <h2>Nossas redes sociais  </h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
-          <a href="https://instagram.com">
+          <a href="https://www.facebook.com/poupay.br/" target="_blank" rel="noreferrer">
             <div className="image-wrapper">
               <img src={facebook} alt="" />
             </div>
             Facebook
           </a>
 
-          <a href="https://instagram.com">
+          <a href="https://www.instagram.com/poupay.br/" target="_blank" rel="noreferrer">
             <div className="image-wrapper">
               <img src={instagram} alt="" />
             </div>
             Instagram
           </a>
 
-          <a href="https://instagram.com">
+          <a href="https://www.linkedin.com/company/poupay" target="_blank" rel="noreferrer">
             <div className="image-wrapper">
               <img src={linkedin} alt="" />
             </div>
             LinkedIn
           </a>
 
-          <a href="https://instagram.com">
+          <a href="https://www.youtube.com/channel/UCf-qKW0abAA8tTh5Px0Eqxg" target="_blank" rel="noreferrer">
             <div className="image-wrapper">
               <img src={youtube} alt="" />
             </div>

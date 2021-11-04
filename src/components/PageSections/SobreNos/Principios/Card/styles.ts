@@ -34,7 +34,7 @@ export const Card = styled.div`
   p{
     font-size: 1.125rem;
     margin: .5rem 0 1.5rem!important;
-    font-weight: 500;
+    font-weight: 600;
   }
 
   span{

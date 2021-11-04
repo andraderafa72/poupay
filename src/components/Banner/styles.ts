@@ -70,13 +70,15 @@ export const Container = styled.section<MainBannerProps>`
 
   .content{
     h3{
+      display: inline-block;
       font-size: 2rem;
       font-weight: 700;
       margin-bottom: 2rem;
     }
 
     h1{
-      font-size: 3.5rem;
+      max-width: 60%;
+      font-size: ${props => props.page === 'Sobre nós' ? '2.5rem' : '3.5rem'};
 
       span{
         color: var(--blue-500);
@@ -88,12 +90,31 @@ export const Container = styled.section<MainBannerProps>`
   @media(min-width: 1600px){
     margin-top: 6rem;
   }
+  @media(max-width: 860px){
+    .content{
+      h1{
+        ${props => props.page === 'Sobre nós' ? 'font-size: 1.5rem' : ''};
+        ${props => props.page === 'Sobre nós' ? 'max-width: 75%' : ''};
+      }
+    }
+  }
   @media(max-width: 768px){
     min-height: 500px;
   }
   @media(max-width:425px){
     .content h1{
-      font-size: 2.75rem;
+      font-size:  ${props => props.page === 'Sobre nós' ? '1.5rem' : '2.75rem'};
+    }
+  }
+  @media(max-width:320px){
+    .content {
+      h3{
+        max-width: 60%;
+        background: rgba(255,255,255,.5);
+      }
+      h1{
+        ${props => props.page === 'Sobre nós' ? 'max-width: 85%' : ''};
+      }
     }
   }
 `;

@@ -90,6 +90,19 @@ export const Container = styled.section`
     }
   }
 
+  @media(max-width: 1380px){
+    .left{
+      .blob{
+        left: -75%;
+        transform: scale(.75);
+      }
+
+      img:not(.blob){
+        transform: translateX(-15%) scale(.8);
+      }
+    }
+  }
+  
   @media(max-width: 1024px){
     margin-bottom: 3rem;
     .left{

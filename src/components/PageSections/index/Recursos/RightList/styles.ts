@@ -5,13 +5,14 @@ export const List = styled.ul`
     display: flex;
     max-width: 400px;
     gap: .5rem;
+    align-items: flex-start;
 
     & + li {
       margin-top: 3rem;
     }
 
     img{
-      transform: translateY(-20px);
+      transform: translateY(-10px);
     }
     
     .content{
@@ -27,5 +28,16 @@ export const List = styled.ul`
 
   @media(max-width: 1024px){
     display: none;
+
+    li{
+      .content{
+        strong{
+          font-size: 1rem;
+        }
+        p{
+          font-size: .9rem;
+        }
+      }
+    }
   }
 `;

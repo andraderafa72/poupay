@@ -7,9 +7,11 @@ import privacidade from './assets/privacidade.png'
 
 interface MainBannerProps {
   page: string;
+  title?: string;
+  subtitle?: string;
 }
 
-export function MainBanner({ page }: MainBannerProps) {
+export function MainBanner({ page, title, subtitle }: MainBannerProps) {
   let src
   switch (page) {
     case 'Sobre nós':
@@ -33,11 +35,9 @@ export function MainBanner({ page }: MainBannerProps) {
     <Container page={page}>
       <div className="wrapper">
         <div className="content">
-          <h3>{page}</h3>
+          <h3>{subtitle}</h3>
           <h1>
-            <span>Lorem ipsum dolor</span> <br />
-            <span>sit amet, consectetur</span><br />
-            <span>adipiscing elit</span><br />
+            <span>{title}</span>
           </h1>
         </div>
 

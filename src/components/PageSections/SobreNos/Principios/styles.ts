@@ -48,6 +48,7 @@ export const Container = styled.section`
       width: 100%;
       text-align: center;
       margin-bottom: 1rem;
+      margin-right: 2rem;
     }
 
     > img{
@@ -75,6 +76,10 @@ export const Container = styled.section`
       display: flex;
       justify-content: space-between;
       gap: 1rem;
+
+      > div:last-child{
+        margin-right: 2rem;
+      }
     }
     
     .card-wrapper{

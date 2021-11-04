@@ -5,7 +5,9 @@ export const ButtonsContainer = styled.div`
   flex-direction: column;
   gap: 1rem;
 
-  button{
+  a{
+    display: inline-flex;
+    align-items: center;
     height: 3.75rem;
     font-size: 1rem;
     font-weight: normal;

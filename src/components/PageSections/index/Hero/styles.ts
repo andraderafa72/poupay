@@ -53,56 +53,13 @@ export const Container = styled.section`
         font-weight: 400;
       }
 
-      .input-wrapper{
-        margin-top: 3.5rem;
-        display: flex;
+      > div:last-child{
+        margin: 3rem auto 0;
+        flex-direction: row;
         align-items: center;
-        position: relative;
-
-        label{
-          position: absolute;
-          top: 0;
-          left: 0;
-          padding: 0 .5rem;
-          transform: translate3D(25%, -50%, 0);
-          background: #8844E3;
-          color: var(--text-light);
-          /* letter-spacing: 1px; */
-        }
-
-        input, button{
-          display: inline-block;
-          height: 3rem;
-          border-radius: .5rem 0 0 .5rem;
-          color: var(--text-light);
-
-          &:focus{
-            outline: none;
-          }
-        }
-
-        input{
-          background: transparent;
-          border: 2px solid var(--text-light);
-          border-right: none;
-          width: 70%;
-          padding-left: 1rem;
-
-          &::placeholder{
-            color: var(--text-light);
-            opacity: .8;
-          }
-        }
-        button{
-          border-radius: 0 .5rem .5rem 0;
-          border: none;
-          background: var(--pink-400);
-          width: 30%;
-          font-weight: 700;
-          font-size: 1rem;
-          
-        }
+        gap: 1rem;
       }
+      
     }
   }
 
@@ -117,13 +74,6 @@ export const Container = styled.section`
         }
         p{
           font-size: 1rem;
-        }
-
-        .input-wrapper{
-          margin-top: 2rem;
-          label{
-            /* background-color: #6A39D1; */
-          }
         }
       }
     }
@@ -149,12 +99,6 @@ export const Container = styled.section`
           font-size: 1.1rem;
           line-height: 155%;
         }
-
-        .input-wrapper{
-          label{
-            background: #8D45DF;
-          }
-        }
       }
     }
   }
@@ -162,24 +106,27 @@ export const Container = styled.section`
   @media(max-width:425px){
     background-position-x: 0;
     .content .wrapper{
-      min-height: 400px;
-      .input-wrapper{
-        label{
-          background: #6838D0;
-        }
+      min-height: 520px;
+
+      > div:last-child{
+        margin: 3rem auto 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
       }
+
     }
   }
 
   @media(max-width:406px){
     .content .wrapper{
-      min-height: 500px;
+      min-height: 520px;
     }
   }
 
   @media(max-width:375px){
     .content .wrapper{
-      min-height: 400px;
+      min-height: 480px;
 
       h1{
         font-size: 2.25rem;
@@ -193,7 +140,7 @@ export const Container = styled.section`
   @media(max-width:320px){
     .content .wrapper{
       padding: 1rem 1.5rem;
-      min-height: 375px;
+      min-height: 475px;
       h1{
         font-size: 2rem;
       }

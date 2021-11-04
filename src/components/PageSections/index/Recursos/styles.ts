@@ -36,7 +36,7 @@ export const Container = styled.section`
       max-width: 600px;
       width: 35%;
       img{
-        transform: scale(.95) translate3D(-20%, -17%, 0);
+        transform: scale(.95) translate3D(-20%, -15%, 0);
         z-index: -1;
       }
     }
@@ -79,26 +79,43 @@ export const Container = styled.section`
     }
   }
 
+
   @media(max-width: 1280px){
-    main .center img{
-      transform:translate3D(-15%, -17%, 0);
-      max-height: 800px;
+    main {
+      .center {
+        min-height: 1000px;
+        img{
+          transform:translate3D(-15%,0%, 0);
+          max-height: 800px;
+        }
+      }
+      button{
+        margin-top: 13rem;
+      }
     }
   }
 
+  @media(max-width: 1024px){
+    main{
+      margin-top: 0;
+    }
+  }
   @media(max-width: 768px){
-    main .center img{
-      transform:translate3D(-25%, -17%, 0);
+    main .center {
+      min-height: 0;
+      img{
+        transform:translate3D(-25%, -15%, 0);
+      }
     }
   }
   @media(max-width: 425px){
     main .center img{
-      transform:translate3D(-36%, -17%, 0);
+      transform:translate3D(-36%, -15%, 0);
     }
   }
   @media(max-width: 375px){
     main .center img{
-      transform:translate3D(-38%, -17%, 0);
+      transform:translate3D(-38%, -15%, 0);
     }
   }
 `;

@@ -120,4 +120,42 @@ export const Container = styled.section`
       }
     }
   }
+
+  @media(min-width:769px){
+    margin-bottom: 12rem;
+    .wrapper{
+      gap: 2rem;
+      .image{
+        width: 40%;
+        img{
+          width: 100%;
+        }
+      }
+      
+      .content{
+        width: 50%;
+        padding-left: 0;
+        padding-right: 2rem;
+
+        h3{
+          margin-bottom: 1.25rem;
+          font-size: 2rem;
+        }
+
+        p{
+          font-size: 1rem;
+          line-height: 140%;
+        }
+      }
+
+      .background{
+        width: 100%;
+        height: 85%;
+        top: 7.5%;
+        left: 0;
+        /* transform: translate3D(-50%, -5%, 0); */
+      }
+    }
+  }
+
 `;

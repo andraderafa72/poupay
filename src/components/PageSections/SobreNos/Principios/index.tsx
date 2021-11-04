@@ -2,16 +2,17 @@ import { PrincipiosCard } from "./Card";
 import { Container } from "./styles";
 import ilustration from './assets/ilustration.svg';
 import blob from './assets/blob.svg';
+import { useLang } from "../../../../hooks/useLang";
 
 export function Principios() {
+  const { TextContent } = useLang();
   return (
     <Container>
       <div className="wrapper">
         <header>
-          <h2>Nossos princípios</h2>
+          <h2>{TextContent.pages?.SobreNos.Principios.title}</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            {TextContent.pages?.SobreNos.Principios.content}
           </p>
         </header>
 
@@ -21,28 +22,28 @@ export function Principios() {
           <div className="cards">
             <PrincipiosCard
               image={'a'}
-              title="Lorem ipsum dolor"
-              content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
+              title={TextContent.pages?.SobreNos.Valores[0].title}
+              content={TextContent.pages?.SobreNos.Valores[0].content}
             />
             <PrincipiosCard
               image={'a'}
-              title="Lorem ipsum dolor"
-              content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
+              title={TextContent.pages?.SobreNos.Valores[1].title}
+              content={TextContent.pages?.SobreNos.Valores[1].content}
             />
             <PrincipiosCard
               image={'a'}
-              title="Lorem ipsum dolor"
-              content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
+              title={TextContent.pages?.SobreNos.Valores[2].title}
+              content={TextContent.pages?.SobreNos.Valores[2].content}
             />
             <PrincipiosCard
               image={'a'}
-              title="Lorem ipsum dolor"
-              content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
+              title={TextContent.pages?.SobreNos.Valores[3].title}
+              content={TextContent.pages?.SobreNos.Valores[3].content}
             />
             <PrincipiosCard
               image={'a'}
-              title="Lorem ipsum dolor"
-              content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
+              title={TextContent.pages?.SobreNos.Valores[4].title}
+              content={TextContent.pages?.SobreNos.Valores[4].content}
             />
           </div>
 
@@ -51,16 +52,16 @@ export function Principios() {
               <p>Missão</p>
               <PrincipiosCard
                 image={'a'}
-                title="Lorem ipsum dolor"
-                content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
-              />
+                title={TextContent.pages?.SobreNos.Missao.title}
+                content={TextContent.pages?.SobreNos.Missao.content}
+                />
             </div>
             <div className="visao">
               <p>Visão</p>
               <PrincipiosCard
                 image={'a'}
-                title="Lorem ipsum dolor"
-                content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
+                title={TextContent.pages?.SobreNos.Visao.title}
+                content={TextContent.pages?.SobreNos.Visao.content}
               />
             </div>
 

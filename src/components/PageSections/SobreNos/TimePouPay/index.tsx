@@ -1,15 +1,16 @@
+import { useLang } from "../../../../hooks/useLang";
 import { Membros } from "./Membros";
 import { Container } from "./styles";
 
 export function TimePouPay() {
+  const { TextContent } = useLang();
   return (
     <Container>
       <div className="wrapper">
         <header>
-          <h2>Conheça o time Poupay+</h2>
+          <h2>{TextContent.pages?.SobreNos.Time.title}</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            {TextContent.pages?.SobreNos.Time.content}          
           </p>
         </header>
 

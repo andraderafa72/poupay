@@ -4,6 +4,13 @@ export const Container = styled.section`
   max-width: 1320px;
   margin: 0 auto 7rem;
   padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .search{
+    width: 100%;
+  }
 
   p{
     color: var(--text-body);

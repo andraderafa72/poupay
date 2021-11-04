@@ -25,21 +25,26 @@ export function ContactForm() {
         <form onSubmit={handleSubmit}>
 
           <div className="input-group">
+            <label htmlFor="">Nome</label>
+            <input type="text" placeholder="Digite aqui" required/>
+          </div>
+          
+          <div className="input-group">
             <label htmlFor="">E-mail</label>
-            <input type="text" placeholder="Digite aqui" />
+            <input type="text" placeholder="Digite aqui" required/>
           </div>
 
           <div className="input-group">
             <label htmlFor="">Assunto</label>
-            <input type="text" placeholder="Digite aqui" />
+            <input type="text" placeholder="Digite aqui" required/>
           </div>
 
           <div className="input-group">
-            <label htmlFor="">Descrição</label>
-            <textarea placeholder="Digite aqui" />
+            <label htmlFor="">Mensagem</label>
+            <textarea placeholder="Digite aqui" required/>
           </div>
 
-          <div className="input-group">
+   {/*        <div className="input-group">
             <label htmlFor="">Motivo</label>
             <input type="text" list="motivos" placeholder="Digite aqui" />
             <datalist id="motivos">
@@ -48,7 +53,7 @@ export function ContactForm() {
               <option>Motivo 3</option>
               <option>Motivo 4</option>
             </datalist>
-          </div>
+          </div> */}
 
           <div className="input-group">
             <label htmlFor="">Anexos</label>

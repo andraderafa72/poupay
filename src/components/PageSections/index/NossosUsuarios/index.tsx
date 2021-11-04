@@ -13,7 +13,7 @@ export function NossosUsuarios() {
       <div className="wrapper">
 
         <header>
-          <h2>Nossos usuários</h2>
+          <h2>Nossas usuárias</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, eaque eum? Adipisci dicta incidunt cum, ratione consequatur iste distinctio voluptatibu</p>
         </header>
 
