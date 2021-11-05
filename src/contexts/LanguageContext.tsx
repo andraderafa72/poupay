@@ -21,7 +21,8 @@ export function LanguageContextProvider({ children }: LanguageContextProviderPro
 
   useEffect(() => {
     const textContent = content[lang];
-
+    console.log(textContent);
+    
     setTextContent(textContent)
   }, [lang])
 

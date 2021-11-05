@@ -2,17 +2,21 @@ import VantagemCard from "./Card";
 import { Container } from "./styles";
 import vantagens from './assets/vantagens.svg';
 import blob from './assets/blob-vantagens.svg';
+import traffic from './assets/traffic.svg';
+import report from './assets/report.svg';
 import { PrimaryButton } from "../../../Button";
-// import { useRef } from "react";
-// import left from '../../../../assets/img/left.svg'
-// import right from '../../../../assets/img/right.svg'
 
 import 'swiper/swiper-bundle.min.css'
 import 'swiper/swiper.min.css'
-import { useLang } from "../../../../hooks/useLang";
+import { useEffect } from "react";
 
-export function Vantagens() {
-  const { TextContent } = useLang();
+export function Vantagens({TextContent}: any) {
+  // const { TextContent } = useLang();
+  
+  useEffect(() => {
+    
+    console.log(TextContent);
+  }, [TextContent])
 
   return (
     <Container>
@@ -24,19 +28,17 @@ export function Vantagens() {
         <p>{TextContent.pages?.Home.Vantagens.subtitle}</p>
 
         <div className="vantagens">
-         {/*  <div className="buttons">
-            <button onClick={handleSubPosX}>
-              <img src={left} alt="" />
-            </button>
-            <button onClick={handleSumPosX}>
-              <img src={right} alt="" />
-            </button>
-          </div> */}
+
 
           <div className="wrapper">
-            <VantagemCard />
-            <VantagemCard />
-            <VantagemCard />
+            {TextContent.pages && [...TextContent.pages?.Home.Vantagens.cards].map((el, index) => (
+              <VantagemCard
+                image={el.title === 'Poupe' ? traffic : report}
+                title={el.title}
+                content={el.content}
+                key={index}
+              />
+            ))}
           </div>
 
         </div>
