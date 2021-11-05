@@ -51,19 +51,19 @@ export const Container = styled.header<HeaderProps>`
       color: var(--text-light);
     }
 
+    select{
+      padding: .5rem 1rem;
+      background: var(--purple-300);
+      border: none;
+      border-radius: .75rem;
+      color: var(--text-light);
+      font-weight: bold;
+    }
     nav{
       display: flex;
       align-items: center;
 
       li{
-        select{
-          padding: .5rem 1rem;
-          background: var(--purple-300);
-          border: none;
-          border-radius: .75rem;
-          color: var(--text-light);
-          font-weight: bold;
-        }
 
         a{
           padding: .75rem 1.25rem;
@@ -94,7 +94,7 @@ export const Container = styled.header<HeaderProps>`
       }
     }
 
-    .auth-buttons{
+    .auth-buttons, .burger-auth-buttons{
       a{
         padding: .75rem 1rem;
         margin-left: 1rem;
@@ -133,6 +133,30 @@ export const Container = styled.header<HeaderProps>`
       position: relative;
       nav, .auth-buttons{
         display: none;
+      }
+
+      select{
+        position: absolute;
+        bottom: 3rem;
+        right: 50%;
+        transform: translateX(50%);
+      }
+
+      .burger-auth-buttons{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        a {
+          margin-left: 0;
+
+          &:first-child{
+            margin-top: 2rem;
+          }
+          &:last-child{
+            margin-top: 3rem;
+          }
+        }
       }
 
       .hamburger{
@@ -179,6 +203,8 @@ export const Container = styled.header<HeaderProps>`
           align-items: center;
           gap: 1rem;
           margin-bottom: 1rem;
+
+          
 
           a{
             &.active{

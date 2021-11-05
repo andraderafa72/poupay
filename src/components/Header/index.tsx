@@ -44,10 +44,10 @@ export function Header({ page }: HeaderProps) {
           <Link to="/" className="primary">Começar grátis</Link>
         </div>
 
-        <button 
-        className={`hamburger hamburger--squeeze ${isBurgerOpen ? 'is-active' : ''}`} 
-        type="button"
-        onClick={() => setisBurgerOpen(!isBurgerOpen)}
+        <button
+          className={`hamburger hamburger--squeeze ${isBurgerOpen ? 'is-active' : ''}`}
+          type="button"
+          onClick={() => setisBurgerOpen(!isBurgerOpen)}
         >
           <span className="hamburger-box">
             <span className="hamburger-inner"></span>
@@ -72,15 +72,16 @@ export function Header({ page }: HeaderProps) {
             <li>
               <Link to="/contato" className={page === 'contato' ? 'active' : ''}>Contato</Link>
             </li>
-
-            <li>
-              <select name="language" id="">
-                <option value="">PT</option>
-                <option value="">EN</option>
-                <option value="">ES</option>
-              </select>
-            </li>
           </nav>
+          <div className="burger-auth-buttons">
+            <Link to="/">Login</Link>
+            <Link to="/" className="primary">Começar grátis</Link>
+          </div>
+          <select name="language" id="">
+            <option value="">PT</option>
+            <option value="">EN</option>
+            <option value="">ES</option>
+          </select>
 
         </div>
       </div>
