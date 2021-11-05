@@ -32,6 +32,16 @@ export function ContactForm() {
             <label htmlFor="">E-mail</label>
             <input type="text" placeholder="Digite aqui" required/>
           </div>
+          
+          <div className="input-group">
+            <label htmlFor="">Celular</label>
+            <input type="tel" placeholder="Digite aqui" required/>
+          </div>
+
+          <div className="input-group">
+            <label htmlFor="">Empresa (opcional)</label>
+            <input type="text" placeholder="Digite aqui"/>
+          </div>
 
           <div className="input-group">
             <label htmlFor="">Assunto</label>
