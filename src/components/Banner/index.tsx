@@ -7,8 +7,8 @@ import privacidade from './assets/privacidade.png'
 
 interface MainBannerProps {
   page: string;
-  title?: string;
-  subtitle?: string;
+  title: string;
+  subtitle: string;
 }
 
 export function MainBanner({ page, title, subtitle }: MainBannerProps) {

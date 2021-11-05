@@ -98,12 +98,37 @@ export const Container = styled.section<MainBannerProps>`
       }
     }
   }
+  @media(max-width: 840px){
+    .content{
+      h1{
+        ${props => props.page === 'Contato' ? 'max-width: 75%' : ''};
+      }
+    }
+  }
   @media(max-width: 768px){
     min-height: 500px;
+    .content{
+      h1{
+        ${props => props.page === 'Contato' ? 'font-size: 2.5rem' : ''};
+      }
+    }
   }
+
+  @media(max-width:500px){
+    .content {
+      h3{
+        font-size:1.5rem;
+      }
+      h1{
+        ${props => props.page === 'Sobre nós' ? 'font-size:1.5rem' : 'font-size: 2.75rem'};
+        ${props => props.page === 'Contato' ? 'font-size: 2rem' : 'font-size: 2.75rem'};
+      }
+    }
+  }
+
   @media(max-width:425px){
     .content h1{
-      font-size:  ${props => props.page === 'Sobre nós' ? '1.5rem' : '2.75rem'};
+      ${props => props.page === 'Sobre nós' ? 'font-size: 1.5rem' : ''};
     }
   }
   @media(max-width:320px){

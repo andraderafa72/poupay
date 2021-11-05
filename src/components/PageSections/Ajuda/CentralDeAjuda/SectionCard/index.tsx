@@ -1,16 +1,15 @@
 import { Card } from "./styles";
 import { ReactSVG } from 'react-svg'
-import ill from './assets/desktop/SOS.svg'; 
 
 interface SectionCardProps {
-  section: string;
-  title: string;
+  ilustration: string;
+  onClick: () => void;
 }
 
-export function SectionCard ({section, title}: SectionCardProps) {
+export function SectionCard ({ilustration, onClick}: SectionCardProps) {
   return (
-    <Card>
-      <ReactSVG src={ill} />
+    <Card onClick={onClick}>
+      <ReactSVG src={ilustration} />
     </Card>
   );
 }

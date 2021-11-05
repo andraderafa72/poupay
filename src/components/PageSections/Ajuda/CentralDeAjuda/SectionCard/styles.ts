@@ -45,4 +45,14 @@ export const Card = styled.div`
   @media(max-width: 640px){
     max-height: 250px;
   }
+  @media(max-width: 425px){
+    max-height: 150px;
+    transform: scale(1.1);
+  }
+  @media(max-width: 375px){
+    width: 100%;
+    max-height: 100%;
+    margin: 1.5rem 0; 
+    transform: scale(1.1);
+  }
 `;

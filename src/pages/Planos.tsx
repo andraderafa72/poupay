@@ -6,8 +6,10 @@ import { ComeceAgora } from "../components/PageSections/PlanosEPreços/ComeceAgo
 import { BaixeOApp } from "../components/PageSections/PlanosEPreços/BaixeOApp";
 import { CardsSection } from "../components/PageSections/PlanosEPreços/CardsSection";
 import { Comparativo } from "../components/PageSections/PlanosEPreços/Comparativo";
+import { useLang } from "../hooks/useLang";
 
 export function Planos() {
+  const { TextContent } = useLang();
   return (
     <>
       <Header page="planos"/>
@@ -15,6 +17,8 @@ export function Planos() {
       <main>
         <MainBanner 
           page={'Planos e preços'}
+          title={TextContent.pages?.Planos.Banner.title}
+          subtitle={TextContent.pages?.Planos.Banner.subtitle}
         />
         <Pricing />
         <ComeceAgora />

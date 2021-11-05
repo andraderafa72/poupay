@@ -1,52 +1,79 @@
-// import { useState } from "react";
-import { useLang } from "../../../../hooks/useLang";
 import { SectionCard } from "./SectionCard";
 import { Container } from "./styles";
 
-export function CentralDeAjuda(){
-  // const [pagination, setPagination] = useState('home');
+import search from './assets/Search.svg';
+import sos from './assets/SOS.svg';
+import assinatura from './assets/Assinatura.svg';
+import conta from './assets/Contas.svg';
+import dados from './assets/Dados.svg';
+import funcionalidade from './assets/Funcionalidades.svg';
+import lgpd from './assets/LGPD.svg';
+import outros from './assets/Outros.svg';
+import saldos from './assets/Saldos.svg';
+import { useState } from "react";
+import { HelpCenter } from "./HelpCenter";
 
-  const { TextContent } = useLang();
+export function CentralDeAjuda() {
+  const [pagination, setPagination] = useState('home');
 
-  return (
+  // const { TextContent } = useLang();
+
+  if (pagination === 'home') return (
     <Container>
       <div className="search">
-        <input type="text" placeholder="Pesquisar"/>
+        <div className="wrapper">
+          <input type="text" placeholder="Pesquisar" />
+          <img src={search} alt="" />
+        </div>
       </div>
 
-      <SectionCard 
-        section="Assinatura"
-        title={TextContent.pages?.Ajuda.CentralDeAjuda.Assinatura.title}
+      <SectionCard
+        ilustration={assinatura}
+        onClick={() => setPagination('Assinatura')}
       />
-      <SectionCard 
-        section="Saldos"
-        title={TextContent.pages?.Ajuda.CentralDeAjuda.Saldos.title}
+      <SectionCard
+        ilustration={saldos}
+        onClick={() => setPagination('Saldos')}
       />
-      <SectionCard 
-        section="Funcionalidades"
-        title={TextContent.pages?.Ajuda.CentralDeAjuda.Funcionalidades.title}
+      <SectionCard
+        ilustration={funcionalidade}
+        onClick={() => setPagination('Funcionalidades')}
+
       />
-      <SectionCard 
-        section="Sincronização de dados"
-        title={TextContent.pages?.Ajuda.CentralDeAjuda.Dados.title}
+      <SectionCard
+        ilustration={dados}
+        onClick={() => setPagination('Dados')}
+
       />
-      <SectionCard 
-        section="Contas e cartões automáticos"
-        title={TextContent.pages?.Ajuda.CentralDeAjuda.Contas.title}
+      <SectionCard
+        ilustration={conta}
+        onClick={() => setPagination('Contas')}
+
       />
-      <SectionCard 
-        section="Segurança LGPD"
-        title={TextContent.pages?.Ajuda.CentralDeAjuda.LGPD.title}
+      <SectionCard
+        ilustration={lgpd}
+        onClick={() => setPagination('LGPD')}
       />
-      <SectionCard 
-        section="Outros Assuntos"
-        title={TextContent.pages?.Ajuda.CentralDeAjuda.Outros.title}
+      <SectionCard
+        ilustration={outros}
+        onClick={() => setPagination('Outros')}
+
       />
-      <SectionCard 
-        section="SOS"
-        title={TextContent.pages?.Ajuda.CentralDeAjuda.SOS.title}
+      <SectionCard
+        ilustration={sos}
+        onClick={() => setPagination('SOS')}
+
       />
     </Container>
   );
 
+  if (pagination !== 'home') {
+    return (
+      <HelpCenter page={pagination} returnFunction={() => setPagination('home')} />
+    );
+  }
+
+  return (
+    <h1>HEllo</h1>
+  );
 }
