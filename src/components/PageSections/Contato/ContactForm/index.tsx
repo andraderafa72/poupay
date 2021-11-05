@@ -32,7 +32,7 @@ export function ContactForm() {
             <label htmlFor="">E-mail</label>
             <input type="text" placeholder="Digite aqui" required/>
           </div>
-          
+
           <div className="input-group">
             <label htmlFor="">Celular</label>
             <input type="tel" placeholder="Digite aqui" required/>
@@ -65,8 +65,9 @@ export function ContactForm() {
           </div> */}
 
           <div className="input-group">
-            <label htmlFor="">Anexos</label>
-            <input type="file" placeholder="Digite aqui" />
+            <label>Anexos</label>
+            <label className="file" htmlFor="anexos">Selecione os arquivos</label>
+            <input type="file" placeholder="Selecione" id="anexos" />
           </div>
 
           <PrimaryButton type="submit">Enviar</PrimaryButton>

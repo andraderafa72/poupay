@@ -50,7 +50,7 @@ export const Container = styled.section`
         font-size: .9rem;
       }
 
-      input, textarea{
+      input, textarea, label.file{
         width: 100%;
         background: transparent;
         border: none;
@@ -68,15 +68,27 @@ export const Container = styled.section`
           font-size: .9rem;
         }
 
+        &:hover{
+          border-bottom-color: var(--pink-400);
+        }
+
         &:focus{
           outline: none;
-          border-bottom-color: var(--pink-400);
+          border-bottom-color: var(--pink-500);
 
           &::placeholder{
             color: var(--text-body);
           }
 
         }
+      }
+
+      input[type="file"]{
+        display: none;
+      }
+
+      label.file{
+        font-size: .95rem;
       }
 
       textarea{
