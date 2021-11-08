@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Container } from "./styles";
 import logo from '../../assets/img/logo.png';
 import { useState } from "react";
+import { ChangeLanguage } from "../ChangeLanguage";
 
 interface HeaderProps {
   page: string;
@@ -31,11 +32,12 @@ export function Header({ page }: HeaderProps) {
           </li>
 
           <li>
-            <select name="language" id="">
+            {/* <select name="language" id="">
               <option value="">PT</option>
               <option value="">EN</option>
               <option value="">ES</option>
-            </select>
+            </select> */}
+            <ChangeLanguage />
           </li>
         </nav>
 
@@ -77,11 +79,9 @@ export function Header({ page }: HeaderProps) {
             <Link to="/">Login</Link>
             <Link to="/" className="primary">Começar grátis</Link>
           </div>
-          <select name="language" id="">
-            <option value="">PT</option>
-            <option value="">EN</option>
-            <option value="">ES</option>
-          </select>
+          <div style={{ marginTop: '1rem'}}>
+            <ChangeLanguage />
+          </div>
 
         </div>
       </div>
