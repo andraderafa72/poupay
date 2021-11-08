@@ -33,7 +33,7 @@ export function ChangeLanguage() {
                 : 'Español'
             )
           return (
-            <div className="lang" onClick={() => {setLang(el); setIsOpen(false)}}>
+            <div className="lang" key={el} onClick={() => {setLang(el); setIsOpen(false)}}>
               <img src={
                 el === 'pt' ? pt : (el === 'es' ? es : en)
               } alt="" />
