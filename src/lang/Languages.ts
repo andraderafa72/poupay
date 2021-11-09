@@ -1158,7 +1158,14 @@ export const content = {
     }
   },
   es: {
-
+    pages: {
+      Home: {
+        Hero: {
+          title: '',
+          subtitle: 'Hacemos que su día a día con el dinero sea lo más fácil posible. Organiza, planifica y hazlo realidad en un solo lugar. ¡Con Poupay+ puedes hacer más!',
+        },
+      }
+    }
   },
   en: {
 

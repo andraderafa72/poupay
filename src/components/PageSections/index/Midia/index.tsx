@@ -6,6 +6,13 @@ import { useRef } from "react";
 import left from '../shared/left.svg';
 import right from '../shared/right.svg';
 
+import pegn from './assets/pegn.png'
+import terra from './assets/terra.jpg'
+import moneytimes from './assets/moneytimes.jpg'
+import bloomberg from './assets/bloomberg.jpg'
+import uol from './assets/uol.png'
+import forbes from './assets/forbes.svg'
+
 
 export function Midia() {
   const ref = useRef<HTMLDivElement>(null)
@@ -41,12 +48,12 @@ export function Midia() {
           </button>
         </div>
         <div className="wrapper" ref={ref}>
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+          <Card image={pegn}/>
+          <Card image={forbes}/>
+          <Card image={terra}/>
+          <Card image={uol}/>
+          <Card image={moneytimes}/>
+          <Card image={bloomberg}/>
           <Card />
           <Card />
           <Card />

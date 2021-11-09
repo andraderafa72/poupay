@@ -1,9 +1,15 @@
 import { Container } from "./styles";
 
-export function Card () {
+interface CardProps {
+  image?: string;
+}
+
+export function Card ({image}: CardProps) {
   return (
     <Container>
-      
+      { image ? (
+        <img src={image} alt="" />
+      ) : (<></>)}
     </Container>
   )
 }
