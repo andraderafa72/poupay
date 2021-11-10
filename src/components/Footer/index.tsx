@@ -33,22 +33,22 @@ export function Footer() {
           <strong>Social Media</strong>
           <ul>
             <li>
-              <a href="https://instagram.com">
+              <a href="https://www.facebook.com/poupay.br/">
                 <img src={facebook} alt="" />
               </a>
             </li>
             <li>
-              <a href="https://instagram.com">
+              <a href="https://www.instagram.com/poupay.br/">
                 <img src={instagram} alt="" />
               </a>
             </li>
             <li>
-              <a href="https://instagram.com">
+              <a href="https://www.linkedin.com/company/poupay">
                 <img src={linkedin} alt="" />
               </a>
             </li>
             <li>
-              <a href="https://instagram.com">
+              <a href="https://www.youtube.com/channel/UCf-qKW0abAA8tTh5Px0Eqxg">
                 <img src={youtube} alt="" />
               </a>
             </li>
