@@ -84,9 +84,11 @@ export const Container = styled.section`
     }
   }
 
+  @media(min-width: 1120px) and (max-width: 1320px){
+    padding: 3rem;
+  }
   @media(max-width: 1120px){
     flex-direction: column;
-    padding-right: 0;
     .content{
       width: 70%;
       margin: 0 auto;
@@ -107,6 +109,12 @@ export const Container = styled.section`
       max-width: 793px;
       width: 100%;
       transform: translate3D(20%, -5%, 0);
+    }
+  }
+
+  @media(max-width: 1024px){
+    .content{
+      padding-right: 0;
     }
   }
 

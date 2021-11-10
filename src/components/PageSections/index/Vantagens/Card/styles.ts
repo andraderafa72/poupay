@@ -3,7 +3,7 @@ import circle from '../assets/circle.svg';
 export const Card = styled.div`
   border: 1px solid #ccc;
   width: 225px;
-  height: 250px;
+  min-height: 250px;
   background: var(--background-light);
   border-radius: 1rem;
   padding: 1.5rem 1rem;
@@ -32,7 +32,23 @@ export const Card = styled.div`
     margin-top: .5rem;
   }
 
+  @media(max-width: 1120px){
+    .image{
+      width: 50%;
+
+      img{
+        margin: 0;
+
+      }
+    }
+  }
   @media(max-width: 768px){
     min-width: 225px;
+    min-height: 100%;
+
+    .image img{
+      margin: 0;
+      margin-left: -25%;
+    }
   }
 `;
