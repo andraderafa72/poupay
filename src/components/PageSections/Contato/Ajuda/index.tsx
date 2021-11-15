@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { PrimaryButton } from "../../../Button";
 import { Container } from "./styles";
 import ajuda from './assets/ajuda.png'
 
@@ -12,9 +11,15 @@ export function BannerDeAjuda() {
         </div>
         <div className="content">
           <h2>Precisa de ajuda? Acesse nossa central de ajuda</h2>
-          <Link to="/ajuda">
-            <PrimaryButton>Acesse agora</PrimaryButton>
-          </Link>
+          <div className="links">
+            <a href="https://api.whatsapp.com/send?phone=5548991884675" className="whatsapp">Nosso WhatsApp</a>
+            <a href="mailto:imprensa@poupay.app" className="email">Nosso Email</a>
+            <a href="mailto:imprensa@poupay.app" className="email">Imprensa</a>
+            <a href="https://www.linkedin.com/company/poupay/jobs" className="carreiras">Carreiras</a>
+            <Link to="/ajuda" className="ajuda">
+              Acesse a central de ajuda
+            </Link>
+          </div>
         </div>
       </div>
     </Container>

@@ -24,13 +24,47 @@ export const Container = styled.section`
     text-align: center;
     transform: translate3D(-15%, 0, 0);
     h2{
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
+      font-size: 1.75rem;
     }
   }
   
   .image{
     img{
       transform: translate3D(-25%, 0, 0);
+    }
+  }
+
+  .links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    a{
+      padding: .675rem 1rem;
+      min-width: 280px;
+      border-radius: .5rem;
+      color: #fff;
+      transition: .2s;
+      &.whatsapp{
+        background: green;
+      }
+
+      &.email{
+        background: #121215;
+      }
+      
+      &.carreiras{
+        background: var(--purple-500);
+      }
+      
+      &.ajuda{
+        background: var(--purple-400);
+      }
+
+      &:hover{
+        filter: brightness(.9);
+      }
     }
   }
 
