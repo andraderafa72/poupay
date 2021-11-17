@@ -22,9 +22,10 @@ export function Footer() {
         </div>
 
         <div className="links">
-          <a href="#" style={{ marginTop: '3.75rem' }}>Contato</a>
-
-          <Link to="/politicadeprivacidade">
+          <Link to="/contato#" style={{ marginTop: '3.75rem' }}>
+            Contato
+          </Link>
+          <Link to="/politicadeprivacidade#">
             Política de privacidade
           </Link>
         </div>

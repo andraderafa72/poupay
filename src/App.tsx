@@ -1,4 +1,5 @@
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { useEffect } from "react";
+import { BrowserRouter, Route, Switch, useLocation } from "react-router-dom";
 import { LanguageContextProvider } from "./contexts/LanguageContext";
 import { Ajuda } from "./pages/Ajuda";
 import { Contato } from "./pages/Contato";
@@ -12,6 +13,7 @@ function App() {
   return (
     <LanguageContextProvider>
       <BrowserRouter>
+        <RestoreScroll />
         <Switch>
           <Route path="/" exact component={Index} />
           <Route path="/sobrenos" exact component={SobreNos} />
@@ -23,6 +25,18 @@ function App() {
         <GlobalStyle />
       </BrowserRouter>
     </LanguageContextProvider>
+  );
+}
+
+function RestoreScroll(){
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return (
+    <></>
   );
 }
 
