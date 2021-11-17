@@ -1,34 +1,10 @@
 import styled from "styled-components";
-import sobrenos from './assets/sobrenos.png'
-import planos from './assets/planos.png'
-import ajuda from './assets/ajuda.png'
-import contato from './assets/contato.png'
-import privacidade from './assets/privacidade.png'
 
 interface MainBannerProps {
   page: string;
 }
 
 export const Container = styled.section<MainBannerProps>`
-  /* background-image: ${props => {
-    switch (props.page) {
-      case 'Sobre nós':
-        return `url(${sobrenos})`
-      case 'Planos e preços':
-        return `url(${planos})`
-      case 'Contato':
-        return `url(${contato})`
-      case 'Ajuda':
-        return `url(${ajuda})`
-      case 'Política de privacidade':
-        return `url(${privacidade})`
-    }
-  }}; 
-  background-position: right;
-  background-size: 70%;
-  background-repeat: no-repeat;*/
-
- 
   padding: 2rem;
   min-height: 700px;
   display: flex;

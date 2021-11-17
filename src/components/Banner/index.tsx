@@ -1,9 +1,9 @@
 import { Container } from "./styles";
-import sobrenos from './assets/sobrenos.png'
-import planos from './assets/planos.png'
-import ajuda from './assets/ajuda.png'
-import contato from './assets/contato.png'
-import privacidade from './assets/privacidade.png'
+import sobrenos from './assets/sobrenos.webp'
+import planos from './assets/planos.webp'
+import ajuda from './assets/ajuda.webp'
+import contato from './assets/contato.webp'
+import privacidade from './assets/privacidade.webp'
 
 interface MainBannerProps {
   page: string;

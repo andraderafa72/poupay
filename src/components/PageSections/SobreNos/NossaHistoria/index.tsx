@@ -1,5 +1,5 @@
 import { Container } from "./styles";
-import image from './assets/image.png';
+import image from './assets/image.webp';
 import { useLang } from "../../../../hooks/useLang";
 
 export function NossaHistoria() {
