@@ -3,9 +3,9 @@ import { useLang } from "../../hooks/useLang";
 import { Container } from "./styles";
 import world from './assets/wrld.svg';
 import down from './assets/down.svg';
-import pt from './assets/pt.png';
-import es from './assets/es.png';
-import en from './assets/en.png';
+import pt from './assets/pt.webp';
+import es from './assets/es.webp';
+import en from './assets/en.webp';
 
 export function ChangeLanguage() {
   const [isOpen, setIsOpen] = useState(false);
