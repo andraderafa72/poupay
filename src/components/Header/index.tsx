@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Container } from "./styles";
-import logo from '../../assets/img/logo.png';
+import logo from '../../assets/img/logo.webp';
 import { useState } from "react";
 import { ChangeLanguage } from "../ChangeLanguage";
 

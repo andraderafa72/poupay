@@ -19,7 +19,7 @@ export function NossosUsuarios() {
 
         <main>
           <div className="left">
-            <img src={nossosUsuarios} alt="" />
+            <img src={nossosUsuarios} alt="Nosso usuários" />
           </div>
 
           <div className="center">
