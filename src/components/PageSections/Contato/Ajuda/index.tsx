@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Container } from "./styles";
-import ajuda from './assets/ajuda.png'
+import ajuda from './assets/ajuda.webp'
 
 export function BannerDeAjuda() {
   return (

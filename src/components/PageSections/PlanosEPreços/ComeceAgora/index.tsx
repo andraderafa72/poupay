@@ -1,6 +1,6 @@
 import { PrimaryButton } from "../../../Button";
 import { Container } from "./styles";
-import woman from './assets/woman.png';
+import woman from './assets/woman.webp';
 
 export function ComeceAgora() {
   return (

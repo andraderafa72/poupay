@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import background from './assets/background.png';
+import background from './assets/background.svg';
 
 export const Container = styled.section`
   background-color: var(--background-dark);

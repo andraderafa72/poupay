@@ -1,5 +1,5 @@
 import { Container } from "./styles";
-import appImg from './assets/app.png';
+import appImg from './assets/app.webp';
 import { DownloadAppButtons } from "./DownloadAppButtons";
 
 export function BaixeOApp() {

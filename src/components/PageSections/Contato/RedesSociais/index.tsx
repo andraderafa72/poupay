@@ -1,5 +1,5 @@
 import { Container } from "./styles";
-import woman from './assets/woman.png';
+import woman from './assets/woman.webp';
 import facebook from '../../../Footer/assets/facebook.svg';
 import instagram from '../../../Footer/assets/instagram.svg';
 import linkedin from '../../../Footer/assets/linkedin.svg';

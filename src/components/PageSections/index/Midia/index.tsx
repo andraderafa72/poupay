@@ -6,11 +6,11 @@ import { useRef } from "react";
 import left from '../shared/left.svg';
 import right from '../shared/right.svg';
 
-import pegn from './assets/pegn.png'
-import terra from './assets/terra.jpg'
-import moneytimes from './assets/moneytimes.jpg'
-import bloomberg from './assets/bloomberg.jpg'
-import uol from './assets/uol.png'
+import pegn from './assets/pegn.webp'
+import terra from './assets/terra.webp'
+import moneytimes from './assets/moneytimes.webp'
+import bloomberg from './assets/bloomberg.webp'
+import uol from './assets/uol.webp'
 import forbes from './assets/forbes.svg'
 
 
