@@ -1,11 +1,64 @@
+import { useLang } from "../../../../hooks/useLang";
 import { Container } from "./styles";
 
 export function Politica() {
+  const { TextContent } = useLang();
   return (
     <Container>
-      <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae ultricies leo integer malesuada. Ac odio tempor orci dapibus ultrices in. Egestas diam in arcu cursus euismod. Dictum fusce ut placerat orci nulla. Tincidunt ornare massa eget egestas purus viverra accumsan in nisl. Tempor id eu nisl nunc mi ipsum faucibus. Fusce id velit ut tortor pretium. Massa ultricies mi quis hendrerit dolor magna eget. Nullam eget felis eget nunc lobortis. Faucibus ornare suspendisse sed nisi. Sagittis eu volutpat odio facilisis mauris sit amet massa. Erat velit scelerisque in dictum non consectetur a erat. Amet nulla facilisi morbi tempus iaculis urna. Egestas purus viverra accumsan in nisl. Feugiat in ante metus dictum at tempor commodo. Convallis tellus id interdum velit laoreet. Proin sagittis nisl rhoncus mattis rhoncus urna neque viverra. Viverra aliquet eget sit amet tellus cras adipiscing enim eu. Ut faucibus pulvinar elementum integer enim neque volutpat ac tincidunt. Dui faucibus in ornare quam. In iaculis nunc sed augue lacus viverra vitae congue. Vitae tempus quam pellentesque nec nam aliquam sem et. Ut morbi tincidunt augue interdum. Sem fringilla ut morbi tincidunt augue. Morbi enim nunc faucibus a pellentesque sit amet porttitor eget. In est ante in nibh mauris. Nam aliquam sem et tortor consequat id porta nibh. Diam quis enim lobortis scelerisque fermentum dui faucibus. Non curabitur gravida arcu ac. Magna fringilla urna porttitor rhoncus dolor. Aenean et tortor at risus viverra adipiscing. Dignissim sodales ut eu sem. Quam quisque id diam vel quam elementum pulvinar etiam non. Eleifend quam adipiscing vitae proin sagittis. Enim facilisis gravida neque convallis a cras semper. Risus commodo viverra maecenas accumsan. Sit amet porttitor eget dolor morbi non arcu risus. Vitae et leo duis ut diam quam. Aliquam faucibus purus in massa tempor. Quisque egestas diam in arcu cursus. Nibh sit amet commodo nulla facilisi nullam. Lacus luctus accumsan tortor posuere ac. Risus quis varius quam quisque id diam vel quam elementum. Scelerisque purus semper eget duis at. Pretium lectus quam id leo in vitae turpis massa sed. Lobortis elementum nibh tellus molestie nunc non blandit massa. Ut tortor pretium viverra suspendisse potenti nullam ac tortor. Posuere morbi leo urna molestie at elementum eu. Viverra adipiscing at in tellus integer. Dis parturient montes nascetur ridiculus mus mauris vitae ultricies leo. Quis blandit turpis cursus in hac habitasse. Sagittis id consectetur purus ut faucibus pulvinar. Ultrices eros in cursus turpis massa. Sit amet nulla facilisi morbi tempus. Mauris rhoncus aenean vel elit. Nulla facilisi cras fermentum odio eu feugiat. Feugiat scelerisque varius morbi enim nunc faucibus a. Neque volutpat ac tincidunt vitae semper. Amet nisl suscipit adipiscing bibendum est ultricies integer. Urna nunc id cursus metus aliquam eleifend. Ullamcorper malesuada proin libero nunc consequat interdum varius. Aliquet sagittis id consectetur purus ut faucibus pulvinar. Tincidunt dui ut ornare lectus sit. Quis risus sed vulputate odio ut enim. Diam sollicitudin tempor id eu nisl nunc mi ipsum. Volutpat odio facilisis mauris sit amet. Pellentesque sit amet porttitor eget dolor morbi non arcu. Pulvinar mattis nunc sed blandit libero volutpat. Amet nisl suscipit adipiscing bibendum est ultricies integer. Posuere urna nec tincidunt praesent semper feugiat nibh sed. In dictum non consectetur a erat. Porta nibh venenatis cras sed felis eget. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue. Pulvinar sapien et ligula ullamcorper. Pharetra convallis posuere morbi leo. Lacus laoreet non curabitur gravida arcu ac. Neque ornare aenean euismod elementum nisi quis eleifend. Tellus in metus vulputate eu scelerisque felis imperdiet proin fermentum. Faucibus purus in massa tempor nec feugiat nisl. Viverra aliquet eget sit amet tellus cras adipiscing enim. Sapien et ligula ullamcorper malesuada proin libero nunc consequat. Quis viverra nibh cras pulvinar mattis nunc sed blandit. Mi bibendum neque egestas congue quisque egestas diam. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. At augue eget arcu dictum varius duis at consectetur. Ipsum dolor sit amet consectetur adipiscing elit. Varius morbi enim nunc faucibus a pellentesque sit amet. Amet luctus venenatis lectus magna fringilla urna porttitor rhoncus. Molestie a iaculis at erat pellentesque. Rutrum quisque non tellus orci. Orci eu lobortis elementum nibh tellus molestie. Viverra mauris in aliquam sem. Id nibh tortor id aliquet lectus proin. Cursus in hac habitasse platea dictumst. In vitae turpis massa sed elementum tempus egestas sed sed. Sed ullamcorper morbi tincidunt ornare. Sit amet consectetur adipiscing elit duis. Vitae nunc sed velit dignissim sodales ut eu. Dignissim enim sit amet venenatis urna cursus eget nunc. Sodales ut eu sem integer vitae. Cursus risus at ultrices mi tempus imperdiet nulla. Nisl tincidunt eget nullam non nisi est sit. Euismod quis viverra nibh cras pulvinar mattis nunc. Vestibulum mattis ullamcorper velit sed. Tincidunt lobortis feugiat vivamus at augue eget. Bibendum enim facilisis gravida neque convallis. Elementum facilisis leo vel fringilla est ullamcorper eget nulla facilisi. Proin sed libero enim sed faucibus turpis. Ut diam quam nulla porttitor massa id neque. Elementum eu facilisis sed odio morbi quis commodo. Semper quis lectus nulla at volutpat diam. Sit amet purus gravida quis blandit. Sit amet dictum sit amet justo donec enim diam. Nulla aliquet porttitor lacus luctus accumsan. Amet consectetur adipiscing elit pellentesque habitant morbi tristique senectus et. Pellentesque elit eget gravida cum sociis natoque penatibus et. Amet venenatis urna cursus eget. Ac turpis egestas maecenas pharetra convallis posuere morbi. Nulla pellentesque dignissim enim sit amet venenatis urna cursus eget. Convallis a cras semper auctor neque vitae. Pharetra pharetra massa massa ultricies mi quis hendrerit dolor magna. Lacus laoreet non curabitur gravida arcu ac. Justo laoreet sit amet cursus sit. Blandit massa enim nec dui nunc. Consectetur purus ut faucibus pulvinar elementum. Quam quisque id diam vel quam elementum. Aliquam ultrices sagittis orci a scelerisque. Commodo nulla facilisi nullam vehicula ipsum. Eget aliquet nibh praesent tristique magna sit amet purus gravida. Fusce id velit ut tortor pretium viverra suspendisse potenti. Nullam eget felis eget nunc lobortis mattis aliquam faucibus. Nisi quis eleifend quam adipiscing. Consectetur libero id faucibus nisl tincidunt eget nullam non nisi. Purus in massa tempor nec feugiat. Ut aliquam purus sit amet. Sem fringilla ut morbi tincidunt. Orci dapibus ultrices in iaculis nunc sed augue lacus. Integer enim neque volutpat ac tincidunt vitae semper quis lectus. Volutpat diam ut venenatis tellus. Phasellus egestas tellus rutrum tellus pellentesque eu tincidunt tortor. Turpis nunc eget lorem dolor sed. Pellentesque sit amet porttitor eget dolor morbi non arcu risus. Quis lectus nulla at volutpat diam ut. Mauris cursus mattis molestie a. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget. Ac
-      </p>
+      <h4>{TextContent.pages.Privacidade.Politica[1].title}</h4>
+      <p>{TextContent.pages.Privacidade.Politica[1][1]}</p> <br />
+      <p>{TextContent.pages.Privacidade.Politica[1][2]}</p> <br />
+      <p>{TextContent.pages.Privacidade.Politica[1][3]}</p> <br />
+
+      <h4>{TextContent.pages.Privacidade.Politica[2].title}</h4>
+      <p>{TextContent.pages.Privacidade.Politica[2][1]}</p> <br />
+
+      <h4>{TextContent.pages.Privacidade.Politica[3].title}</h4>
+      <p>{TextContent.pages.Privacidade.Politica[3][1]}</p> <br />
+      <p>{TextContent.pages.Privacidade.Politica[3][2]}</p> <br />
+      <p>{TextContent.pages.Privacidade.Politica[3][3]}</p> <br />
+
+      <h4>{TextContent.pages.Privacidade.Politica[4].title}</h4>
+      <p>{TextContent.pages.Privacidade.Politica[4][1]}</p> <br />
+
+      <h4>{TextContent.pages.Privacidade.Politica[5].title}</h4>
+      <p>{TextContent.pages.Privacidade.Politica[5][1]}</p> <br />
+      <p>{TextContent.pages.Privacidade.Politica[5][2]}</p> <br />
+
+      <h4>{TextContent.pages.Privacidade.Politica[6].title}</h4>
+      <p>{TextContent.pages.Privacidade.Politica[6][1]}</p> <br />
+      <p>{TextContent.pages.Privacidade.Politica[6][2]}</p> <br />
+
+      <h4>{TextContent.pages.Privacidade.Politica[7].title}</h4>
+      <p>{TextContent.pages.Privacidade.Politica[7][1]}</p> <br />
+      <p>{TextContent.pages.Privacidade.Politica[7][2]}</p> <br />
+
+      <h4>{TextContent.pages.Privacidade.Politica[8].title}</h4>
+      <p>{TextContent.pages.Privacidade.Politica[8][1]}</p> <br />
+      <ul>
+        {[...TextContent.pages.Privacidade.Politica[8].lists[1]].map(el => (
+          <li key={el}>
+            {el}
+          </li>
+        ))}
+      </ul>
+      <p>{TextContent.pages.Privacidade.Politica[8][1.1]}</p> <br />
+      <p>{TextContent.pages.Privacidade.Politica[8][1.2]}</p> <br />
+      <p>{TextContent.pages.Privacidade.Politica[8][2]}</p> <br />
+      <ul>
+        {[...TextContent.pages.Privacidade.Politica[8].lists[2]].map(el => (
+          <li key={el}>
+            {el}
+          </li>
+        ))}
+      </ul>
+
+      <h4>{TextContent.pages.Privacidade.Politica[9].title}</h4>
+      <p>{TextContent.pages.Privacidade.Politica[9][1]}</p> <br />
+
+      <h4>{TextContent.pages.Privacidade.Politica[10].title}</h4>
+      <p>{TextContent.pages.Privacidade.Politica[10][1]}</p> <br />
+
     </Container>
   );
 }
