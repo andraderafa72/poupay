@@ -84,7 +84,7 @@ export const Container = styled.div<ContainerProps>`
     }
   }
   
-  @media(max-height: 695px){
+  @media(max-height: 695px) and (max-width: 980px){
     .langs{
       bottom: auto;
       top: -300%;

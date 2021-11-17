@@ -25,7 +25,7 @@ export const Container = styled.section`
     transform: translate3D(-15%, 0, 0);
     h2{
       margin-bottom: 1.5rem;
-      font-size: 1.75rem;
+      /* font-size: 1.75rem; */
     }
   }
   

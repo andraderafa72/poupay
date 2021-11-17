@@ -12,10 +12,10 @@ export function BannerDeAjuda() {
         <div className="content">
           <h2>Precisa de ajuda? Acesse nossa central de ajuda</h2>
           <div className="links">
-            <a href="https://api.whatsapp.com/send?phone=5548991884675" className="whatsapp">Nosso WhatsApp</a>
+            {/* <a href="https://api.whatsapp.com/send?phone=5548991884675" className="whatsapp">Nosso WhatsApp</a>
             <a href="mailto:imprensa@poupay.app" className="email">Nosso Email</a>
             <a href="mailto:imprensa@poupay.app" className="email">Imprensa</a>
-            <a href="https://www.linkedin.com/company/poupay/jobs" className="carreiras">Carreiras</a>
+            <a href="https://www.linkedin.com/company/poupay/jobs" className="carreiras">Carreiras</a> */}
             <Link to="/ajuda" className="ajuda">
               Acesse a central de ajuda
             </Link>
