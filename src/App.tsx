@@ -16,11 +16,11 @@ function App() {
         <RestoreScroll />
         <Switch>
           <Route path="/" exact component={Index} />
-          <Route path="/sobrenos" exact component={SobreNos} />
-          <Route path="/planos" exact component={Planos} />
-          <Route path="/contato" exact component={Contato} />
-          <Route path="/politicadeprivacidade" exact component={Privacidade} />
-          <Route path="/ajuda" exact component={Ajuda} />
+          <Route path="/#/sobrenos" exact component={SobreNos} />
+          <Route path="/#/planos" exact component={Planos} />
+          <Route path="/#/contato" exact component={Contato} />
+          <Route path="/#/politicadeprivacidade" exact component={Privacidade} />
+          <Route path="/#/ajuda" exact component={Ajuda} />
         </Switch>
         <GlobalStyle />
       </BrowserRouter>

@@ -22,13 +22,13 @@ export function Header({ page }: HeaderProps) {
             <Link to="/" className={page === 'home' ? 'active' : ''}>Home</Link>
           </li>
           <li>
-            <Link to="/sobrenos" className={page === 'sobre' ? 'active' : ''}>Sobre</Link>
+            <Link to="/#/sobrenos" className={page === 'sobre' ? 'active' : ''}>Sobre</Link>
           </li>
           <li>
-            <Link to="/planos" className={page === 'planos' ? 'active' : ''}>Planos</Link>
+            <Link to="/#/planos" className={page === 'planos' ? 'active' : ''}>Planos</Link>
           </li>
           <li>
-            <Link to="/contato" className={page === 'contato' ? 'active' : ''}>Contato</Link>
+            <Link to="/#/contato" className={page === 'contato' ? 'active' : ''}>Contato</Link>
           </li>
 
           <li>
