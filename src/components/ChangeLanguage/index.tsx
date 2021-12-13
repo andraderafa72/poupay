@@ -23,7 +23,7 @@ export function ChangeLanguage() {
         <img src={down} alt="" />
       </div>
       <div className="langs">
-        {langs.map((el) => {
+        {langs && langs.map((el) => {
           // if (el === lang) return null;
           const language = el === 'pt' 
             ? 'Português BR' 
