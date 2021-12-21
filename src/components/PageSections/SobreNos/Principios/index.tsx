@@ -4,6 +4,12 @@ import ilustration from './assets/ilustration.svg';
 import blob from './assets/blob.svg';
 import { useLang } from "../../../../hooks/useLang";
 
+import Chart from './assets/Chart.svg';
+import Card from './assets/Card.svg';
+import Report from './assets/Report.svg';
+import Wallet from './assets/Wallet.svg';
+import Analytics from './assets/Analytics.svg';
+
 export function Principios() {
   const { TextContent } = useLang();
   return (
@@ -21,27 +27,27 @@ export function Principios() {
 
           <div className="cards">
             <PrincipiosCard
-              image={'a'}
+              image={Report}
               title={TextContent.pages?.SobreNos.Valores[0].title}
               content={TextContent.pages?.SobreNos.Valores[0].content}
             />
             <PrincipiosCard
-              image={'a'}
+              image={Card}
               title={TextContent.pages?.SobreNos.Valores[1].title}
               content={TextContent.pages?.SobreNos.Valores[1].content}
             />
             <PrincipiosCard
-              image={'a'}
+              image={Chart}
               title={TextContent.pages?.SobreNos.Valores[2].title}
               content={TextContent.pages?.SobreNos.Valores[2].content}
             />
             <PrincipiosCard
-              image={'a'}
+              image={Wallet}
               title={TextContent.pages?.SobreNos.Valores[3].title}
               content={TextContent.pages?.SobreNos.Valores[3].content}
             />
             <PrincipiosCard
-              image={'a'}
+              image={Analytics}
               title={TextContent.pages?.SobreNos.Valores[4].title}
               content={TextContent.pages?.SobreNos.Valores[4].content}
             />
@@ -51,7 +57,7 @@ export function Principios() {
             <div className="missao">
               <p>Missão</p>
               <PrincipiosCard
-                image={'a'}
+                image={Report}
                 title={TextContent.pages?.SobreNos.Missao.title}
                 content={TextContent.pages?.SobreNos.Missao.content}
                 />
@@ -59,7 +65,7 @@ export function Principios() {
             <div className="visao">
               <p>Visão</p>
               <PrincipiosCard
-                image={'a'}
+                image={Card}
                 title={TextContent.pages?.SobreNos.Visao.title}
                 content={TextContent.pages?.SobreNos.Visao.content}
               />

@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import blob from './card-blob.svg';
 
 export const Card = styled.div`
   border: 1px solid #ccc;
@@ -19,16 +18,11 @@ export const Card = styled.div`
   }
 
   .card-image{
-    /* max-width: 210px; */
-    background-image: url(${blob});
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding: 1rem 1.5rem;
   }
 
   img{
-    width: 3rem;
-    height: 3rem;
+    width: 6rem;
+    height: 6rem;
   }
 
   p{
