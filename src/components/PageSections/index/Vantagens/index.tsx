@@ -2,8 +2,11 @@ import VantagemCard from "./Card";
 import { Container } from "./styles";
 import vantagens from './assets/vantagens.svg';
 import blob from './assets/blob-vantagens.svg';
-import traffic from './assets/traffic.svg';
-import report from './assets/report.svg';
+
+import cofre from './assets/cofre.svg';
+import rocket from './assets/rocket.svg';
+import chart from './assets/chart.svg';
+
 import { PrimaryButton } from "../../../Button";
 
 import 'swiper/swiper-bundle.min.css'
@@ -33,7 +36,7 @@ export function Vantagens({TextContent}: any) {
           <div className="wrapper">
             {TextContent.pages && [...TextContent.pages?.Home.Vantagens.cards].map((el, index) => (
               <VantagemCard
-                image={el.title === 'Poupe' ? traffic : report}
+                image={el.title === 'Poupe' ? cofre : (el.title === 'Realize' ? rocket : chart)}
                 title={el.title}
                 content={el.content}
                 key={index}

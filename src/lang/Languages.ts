@@ -54,6 +54,28 @@ export const content = {
               `,
             },
           ],
+          right: [
+            {
+              title: `SOS`,
+              subtitle: `O recurso SOS conta com telefones de emergência, guia de boletim de ocorrência, violentômetro e frases de empoderamento feminino.`,
+            },
+            {
+              title: `Registre suas transações`,
+              subtitle: `Registre suas receitas e despesas que não estão vinculadas as contas bancárias manualmente.`,
+            },
+            {
+              title: `Confira suas transferências`,
+              subtitle: `Não precisa acessar banco por banco para ver o extrato das transferências. Veja todas as transferências realizadas de todos os bancos realizadas em um único lugar!`,
+            },
+            {
+              title: `Gráficos de despesas`,
+              subtitle: `Tenha uma melhor visualização dos seus gastos através de gráficos, para entender em qual setor está gastando mais.`,
+            },
+            {
+              title: `Minhas atividades`,
+              subtitle: `É a comparação do seu controle financeiro no mês em relação aos resultados anteriores, como: economia, balanço mensal e categorias mais utilizado.`,
+            },
+          ]
         },
         Vantagens: {
           title: 'Faça mais com seu dinheiro',

@@ -9,16 +9,16 @@ export const Card = styled.div`
   padding: 1.5rem 1rem;
 
   .image{
-    background-image: url(${circle});
+    /* background-image: url(${circle});
     background-size: contain;
-    background-repeat: no-repeat;
-    padding: 1rem;
+    background-repeat: no-repeat; */
+    margin: 0 0 1rem .5rem;
   }
 
   img{
     display: block;
-    width: 2rem;
-    height: 2rem;
+    width: 4rem;
+    height: 4rem;
     margin-top: 0!important;
     margin-left: -.4rem;
     position: relative;
